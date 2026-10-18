@@ -256,28 +256,80 @@ function getFormFields() {
 
 async function sendEmailLead(fields) {
     try {
-        const response = await fetch(FEELY_CONFIG.formSubmitEndpoint, {
+        const formData = new FormData();
+        formData.append("_subject", FEELY_CONFIG.emailSubject);
+        formData.append("_captcha", "false");
+        formData.append("_template", "table");
+        formData.append("Client_Name", fields.name);
+        formData.append("Client_Contact", fields.contact || "Not provided");
+        formData.append("Category", fields.category);
+        formData.append("Scope", fields.scale);
+        formData.append("Project_Details", fields.message);
+        formData.append("Source_Page", window.location.href);
+
+        const response = await fetch("https://formsubmit.co/ajax/simonyan.creator@gmail.com", {
             method: "POST",
             headers: {
-                "Content-Type": "application/json",
                 "Accept": "application/json"
             },
-            body: JSON.stringify({
-                _subject: FEELY_CONFIG.emailSubject,
-                _template: "table",
-                _captcha: "false",
-                Client_Name: fields.name,
-                Client_Contact: fields.contact || "Not provided",
-                Category: fields.category,
-                Scope: fields.scale,
-                Project_Details: fields.message,
-                Source: window.location.href
-            })
+            body: formData
         });
         return response.ok;
     } catch (e) {
         return false;
     }
+}
+
+function openInstagramModal(text) {
+    let modal = document.getElementById("feely-ig-modal");
+    if (!modal) {
+        modal = document.createElement("div");
+        modal.id = "feely-ig-modal";
+        modal.className = "feely-modal-backdrop";
+        modal.innerHTML = `
+            <div class="feely-modal-box">
+                <span class="tag tag-accent">INSTAGRAM DIRECT // READY</span>
+                <h3 id="ig-modal-title">Текст заявки скопирован!</h3>
+                <p id="ig-modal-desc" style="font-size: 0.88rem; color: var(--text-muted);">
+                    Instagram не позволяет сторонним сайтам автоматически вставлять текст в поле ввода Direct из-за правил безопасности Meta.<br>
+                    Мы скопировали готовую карточку заявки в буфер обмена. Просто нажмите <strong>«Вставить» (Ctrl+V / Paste)</strong> в открывшемся диалоге с <strong>@feely_design</strong>.
+                </p>
+                <div class="feely-modal-preview" id="ig-modal-preview"></div>
+                <div class="feely-modal-actions">
+                    <button type="button" id="ig-open-btn" class="btn-primary" style="flex: 1; justify-content: center;">
+                        Открыть Instagram Direct ↗
+                    </button>
+                    <button type="button" id="ig-close-btn" class="btn-secondary">
+                        Закрыть
+                    </button>
+                </div>
+            </div>
+        `;
+        document.body.appendChild(modal);
+
+        document.getElementById("ig-close-btn").addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+    }
+
+    const isRu = document.documentElement.lang === "ru";
+    document.getElementById("ig-modal-title").textContent = isRu 
+        ? "Текст заявки скопирован в буфер!" 
+        : "Inquiry brief copied to clipboard!";
+    document.getElementById("ig-modal-desc").innerHTML = isRu
+        ? "Instagram блокирует авто-вставку стороннего текста в целях безопасности Meta.<br>Карточка вашего проекта уже в буфере обмена — просто нажмите <strong>Вставить (Ctrl+V / Paste)</strong> в чате с <strong>@feely_design</strong>."
+        : "Instagram security prevents third-party sites from prepopulating direct messages.<br>Your formatted brief is copied to your clipboard — simply click <strong>Paste (Ctrl+V)</strong> in the chat with <strong>@feely_design</strong>.";
+    document.getElementById("ig-open-btn").textContent = isRu
+        ? "Перейти в Direct @feely_design ↗"
+        : "Open @feely_design Direct ↗";
+    document.getElementById("ig-modal-preview").textContent = text;
+
+    document.getElementById("ig-open-btn").onclick = () => {
+        window.open(`https://ig.me/m/${FEELY_CONFIG.instagramUsername}`, "_blank", "noopener");
+        modal.style.display = "none";
+    };
+
+    modal.style.display = "flex";
 }
 
 function showStatus(msg) {
@@ -305,19 +357,16 @@ async function dispatchInquiry(channel) {
 
     if (channel === "tg") {
         showStatus(isRu
-            ? "✓ Заявка скопирована, отправлена на почту и передана в Telegram (@simonyanrr)..."
-            : "✓ Brief copied, emailed & routed to Telegram (@simonyanrr)...");
+            ? "✓ Заявка скопирована и передана в Telegram (@simonyanrr)..."
+            : "✓ Brief copied & routed to Telegram (@simonyanrr)...");
         window.open(`https://t.me/${FEELY_CONFIG.telegramUsername}?text=${encoded}`, "_blank", "noopener");
     } else if (channel === "wa") {
         showStatus(isRu
-            ? "✓ Заявка отправлена на почту и передана в WhatsApp (+972533455929)..."
-            : "✓ Brief emailed & routed to WhatsApp (+972533455929)...");
+            ? "✓ Заявка сформирована. Открываем WhatsApp (+972533455929)..."
+            : "✓ Brief formatted. Opening WhatsApp (+972533455929)...");
         window.open(`https://wa.me/${FEELY_CONFIG.whatsappNumber}?text=${encoded}`, "_blank", "noopener");
     } else if (channel === "ig") {
-        showStatus(isRu
-            ? "✓ Заявка отправлена на почту и скопирована в буфер! Вставьте (Ctrl+V / Paste) в Direct @feely_design."
-            : "✓ Brief emailed & copied to clipboard! Paste (Ctrl+V) into @feely_design Instagram DM.");
-        window.open(`https://ig.me/m/${FEELY_CONFIG.instagramUsername}`, "_blank", "noopener");
+        openInstagramModal(fields.text);
     } else if (channel === "email") {
         showStatus(isRu
             ? "⏳ Отправляем заявку на simonyan.creator@gmail.com..."
@@ -328,8 +377,14 @@ async function dispatchInquiry(channel) {
                 ? "✓ Заявка успешно отправлена на почту с темой: " + FEELY_CONFIG.emailSubject
                 : "✓ Inquiry successfully sent to email with subject: " + FEELY_CONFIG.emailSubject);
         } else {
-            const subj = encodeURIComponent(FEELY_CONFIG.emailSubject);
-            window.location.href = `mailto:${FEELY_CONFIG.email}?subject=${subj}&body=${encoded}`;
+            // Native email client fallback
+            const formEl = document.getElementById("inquiry-form");
+            if (formEl) {
+                formEl.submit();
+            } else {
+                const subj = encodeURIComponent(FEELY_CONFIG.emailSubject);
+                window.location.href = `mailto:${FEELY_CONFIG.email}?subject=${subj}&body=${encoded}`;
+            }
         }
     }
 }
