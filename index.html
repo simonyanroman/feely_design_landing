@@ -1,481 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEELY DESIGN // PARAMETRIC R&D, TILES & DIGITAL FABRICATION</title>
-    <meta name="description" content="Feely Design R&D Lab: Parametric gypsum tiles, direct 3D-printed casting molds (silicone-free), custom workshop tooling, and composite interior objects.">
+    <title>FEELY DESIGN // Роман Симонян — Предметный R&D и параметрика</title>
+    <meta name="description" content="Feely Design: параметрическая плитка, тактильные объекты и разработка прямого 3D-печатного литья без силикона. Лаборатория Романа Симоняна.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
-        <a href="index.html" class="logo-block">
-            <span class="logo-indicator"></span>
-            <span>FEELY DESIGN // R&D LAB</span>
+        <a href="index.html" class="brand">
+            <span class="brand-dot"></span>
+            <span>FEELY DESIGN</span>
         </a>
-        <nav>
-            <a href="#services" data-i18n="nav_services">Capabilities</a>
-            <a href="#cases" data-i18n="nav_cases">Case Studies</a>
-            <a href="#archive" data-i18n="nav_archive">R&D Lab</a>
-            <a href="#process" data-i18n="nav_process">Workflow</a>
+        <nav class="nav-links">
+            <a href="#work">Работы</a>
+            <a href="#services">Направления</a>
+            <a href="projects/about.html">Обо мне</a>
+            <a href="#contact" class="btn-nav">Связаться</a>
         </nav>
-        <div class="header-controls">
-            <div class="lang-switch" aria-label="Language switcher">
-                <button type="button" class="lang-btn active" data-lang="en">EN</button>
-                <button type="button" class="lang-btn" data-lang="ru">RU</button>
-            </div>
-            <a href="#contact" class="cta-header" data-i18n="nav_cta">Start a Project →</a>
-        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="grid-row hero">
-        <div class="hero-main pad-lg">
+    <div class="page-container">
+
+        <!-- HERO SECTION (Личный голос автора + ваша фотография) -->
+        <section class="hero-section">
             <div>
-                <span class="tag tag-accent" data-i18n="hero_tag1">Parametric R&D</span>
-                <span class="tag" data-i18n="hero_tag2">Direct 3D-Printed Formwork</span>
-                <span class="tag" data-i18n="hero_tag3">Small-Batch Fabrication</span>
-                <h1 class="hero-title" data-i18n="hero_title">Algorithmic Surfaces, Silicone-Free Molds & Custom Products</h1>
-                <p class="hero-sub" data-i18n="hero_sub">
-                    We engineer parametric geometries in Grasshopper, print modular casting matrices with interchangeable faceplates, and craft tactile architectural tiles, interior objects, and workshop tooling.
+                <span class="badge badge-accent">R&D Лаборатория предметного дизайна</span>
+                <h1 class="hero-title">Материализую цифровые алгоритмы в осязаемые предметы.</h1>
+                <p class="hero-subtitle">
+                    Я проектирую параметрический рельеф в Grasshopper, отливаю авторскую плитку из гипса без силиконовых форм и создаю предметы интерьера с честной фактурой.
                 </p>
-            </div>
-            <div class="hero-actions">
-                <a href="#contact" class="btn-primary" data-i18n="hero_btn_quote">Configure Request →</a>
-                <a href="#cases" class="btn-secondary" data-i18n="hero_btn_cases">Explore Case Studies</a>
-            </div>
-        </div>
-
-        <div class="hero-specs">
-            <ul class="spec-list">
-                <li>
-                    <span data-i18n="spec_focus_k">Focus</span>
-                    <span data-i18n="spec_focus_v">Parametric Design & Digital Fabrication</span>
-                </li>
-                <li>
-                    <span data-i18n="spec_innov_k">Core Tech</span>
-                    <span data-i18n="spec_innov_v">Direct 3D-Printed Formwork (Zero Silicone)</span>
-                </li>
-                <li>
-                    <span data-i18n="spec_cad_k">CAD / Algo</span>
-                    <span data-i18n="spec_cad_v">Rhino + Grasshopper / Fusion 360 / Blender</span>
-                </li>
-                <li>
-                    <span data-i18n="spec_mat_k">Materials</span>
-                    <span data-i18n="spec_mat_v">Architectural Gypsum, Concrete, Leather, Technical Polymers</span>
-                </li>
-                <li>
-                    <span data-i18n="spec_loc_k">Location</span>
-                    <span data-i18n="spec_loc_v">Haifa, Israel // Worldwide Shipping & CAD</span>
-                </li>
-            </ul>
-            <div class="pad-md" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color);" data-i18n="status_line">
-                [SYSTEM STATUS]: R&D and small-batch production slots open for current month.
-            </div>
-        </div>
-    </section>
-
-    <!-- MARQUEE -->
-    <div class="marquee-wrapper">
-        <div class="marquee-content">
-            SILICONE-FREE MODULAR MOLDS &nbsp;///&nbsp; PARAMETRIC GYPSUM TILES (80×80 / DIPTYCHS) &nbsp;///&nbsp; GRASSHOPPER ALGORITHMS &nbsp;///&nbsp; TENSION LEATHER OBJECTS & EMBOSSING STAMPS &nbsp;///&nbsp; 0.8MM SPIRAL VASE EXTRUSION &nbsp;///&nbsp; WORKSHOP JIGS & TOOLING &nbsp;///&nbsp; SILICONE-FREE MODULAR MOLDS &nbsp;///&nbsp; PARAMETRIC GYPSUM TILES &nbsp;///&nbsp;
-        </div>
-    </div>
-
-    <!-- SERVICES -->
-    <div id="services" class="section-bar">
-        <span data-i18n="sec_services_l">01 // Core Capabilities</span>
-        <span data-i18n="sec_services_r">From Algorithm to Physical Object</span>
-    </div>
-
-    <section class="grid-row services-grid">
-        <!-- Service 1 -->
-        <div class="service-card pad-lg">
-            <div>
-                <span class="service-num">[CAPABILITY 01]</span>
-                <h2 class="service-title" data-i18n="srv1_title">Parametric Tiles & Casting Matrices</h2>
-                <p class="service-desc" data-i18n="srv1_desc">
-                    Generative surface relief design in Grasshopper paired with our proprietary modular 3D-printed formwork. Interchangeable front plates allow rapid texture iteration without waiting 24h for silicone curing.
-                </p>
-            </div>
-            <div class="service-meta">
-                <div data-i18n="srv1_meta1"><strong>Applications:</strong> 80×80mm & custom wall tiles, diptychs/triptychs, acoustic & sculptural panels.</div>
-                <div data-i18n="srv1_meta2"><strong>Deliverable:</strong> Finished cast gypsum/concrete series or ready-to-cast modular matrices.</div>
-            </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="service-card pad-lg">
-            <div>
-                <span class="service-num">[CAPABILITY 02]</span>
-                <h2 class="service-title" data-i18n="srv2_title">Tactile Objects & Composite Goods</h2>
-                <p class="service-desc" data-i18n="srv2_desc">
-                    Product R&D combining 3D-printed structural cores, mineral casting, metal frames, and vegetable-tanned / Crazy Horse leather. Engineered from algorithmic concept to small-batch series.
-                </p>
-            </div>
-            <div class="service-meta">
-                <div data-i18n="srv2_meta1"><strong>Applications:</strong> Interior clocks, lighting, vessels, Instax/analog accessories, desk architecture.</div>
-                <div data-i18n="srv2_meta2"><strong>Deliverable:</strong> Bespoke product batches, functional prototypes, and embossing stamps.</div>
-            </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="service-card pad-lg">
-            <div>
-                <span class="service-num">[CAPABILITY 03]</span>
-                <h2 class="service-title" data-i18n="srv3_title">Workshop Jigs & Custom G-Code</h2>
-                <p class="service-desc" data-i18n="srv3_desc">
-                    Precision assembly jigs, snap-on drilling templates for cabinetry, and direct algorithmic G-code generation (0.8mm+ nozzle spiral extrusion, non-standard overhangs) beyond standard slicer limits.
-                </p>
-            </div>
-            <div class="service-meta">
-                <div data-i18n="srv3_meta1"><strong>Clients:</strong> Furniture workshops, leathercraft studios, 3D printing farms, architects.</div>
-                <div data-i18n="srv3_meta2"><strong>Deliverable:</strong> Physical shop-floor tooling or parametric Grasshopper/CAD packages.</div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CASES -->
-    <div id="cases" class="section-bar">
-        <span data-i18n="sec_cases_l">02 // Flagship Case Studies</span>
-        <span data-i18n="sec_cases_r">Deep Product Research</span>
-    </div>
-
-    <section class="grid-row" style="border-bottom: none;">
-        <!-- Case 1: Parametric Tiles -->
-        <div class="grid-row case-item">
-            <div class="case-visual">
-                <div>
-                    <span class="tag tag-dark" data-i18n="case1_tag">CASE_01 // MODULAR CASTING SYSTEM</span>
+                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                    <a href="#work" class="btn btn-primary">Смотреть работы ↓</a>
+                    <a href="projects/about.html" class="btn btn-secondary">Обо мне и философии →</a>
                 </div>
-                <a href="projects/parametric-tiles.html" class="case-img-frame" title="View Case Study">
-                    <div class="case-img-grid-2">
-                        <img src="assets/img/convex_collage.png" alt="Convex 80x80 Gypsum & Terracotta Tiles" loading="lazy">
-                        <img src="assets/img/waves_result.jpg" alt="Waves Parametric Gypsum Tile & 3D Printed Mold" loading="lazy">
+            </div>
+
+            <div class="hero-author-card">
+                <div class="author-header">
+                    <img src="assets/img/roman_simonyan.jpg" alt="Роман Симонян" class="author-avatar">
+                    <div class="author-meta">
+                        <h3>Роман Симонян</h3>
+                        <p>Основатель Feely Design</p>
+                        <p style="font-size: 0.78rem; color: var(--accent);">Хайфа, Израиль • Worldwide</p>
                     </div>
-                </a>
-                <div style="font-size: 0.75rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>STACK: Rhino + Grasshopper // FDM Formwork</span>
-                    <span>FORMAT: 80×80 mm Modular</span>
+                </div>
+                <div class="author-bio-snippet">
+                    «Каждый свой продукт я начинаю с исследования — визуального поиска, уникального алгоритма или решения технологического тупика. Для меня важно, чтобы вы чувствовали глубину продукта».
                 </div>
             </div>
-            <div class="case-info pad-lg">
-                <div>
-                    <span class="tag">Zero Silicone</span>
-                    <span class="tag">Gypsum & Terracotta</span>
-                    <span class="tag">Grasshopper</span>
-                    <h3 class="case-title" data-i18n="case1_title">Waves & Convex 80×80: Silicone-Free Parametric Gypsum Tiles</h3>
-                    <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="case1_desc">
-                        Traditional silicone molds make R&D slow and expensive. We engineered a unified outer retention frame with interchangeable 3D-printed parametric faceplates—cutting screen-to-cast time from days to hours.
-                    </p>
-                </div>
-                <table class="case-table">
-                    <tr>
-                        <td data-i18n="case1_ch_k">Innovation</td>
-                        <td data-i18n="case1_ch_v">Direct FDM formwork with draft-angle compensation and reusable clamping rails instead of silicone.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case1_sol_k">Geometry</td>
-                        <td data-i18n="case1_sol_v">Grasshopper wave & spherical attractor scripts that lock perimeter edges flat for seamless diptych/wall mounting.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case1_imp_k">Colorways</td>
-                        <td data-i18n="case1_imp_v">Raw unbleached gypsum & deep iron-oxide terracotta.</td>
-                    </tr>
-                </table>
-                <a href="projects/parametric-tiles.html" class="case-link" data-i18n="case1_btn">Read Full Technical Breakdown →</a>
+        </section>
+
+        <!-- PORTFOLIO / WORK (Чистые карточки вместо плотного текста) -->
+        <div class="section-header" id="work">
+            <div>
+                <span class="badge">Портфолио проектов</span>
+                <h2>Избранные работы</h2>
             </div>
+            <a href="projects/about.html" style="font-size: 0.9rem; font-weight: 600; color: var(--accent);">Подробнее об исследованиях →</a>
         </div>
 
-        <!-- Case 2: Leather Clock & Tooling -->
-        <div class="grid-row case-item">
-            <div class="case-visual">
-                <div>
-                    <span class="tag tag-dark" data-i18n="case2_tag">CASE_02 // HYBRID MATERIAL R&D</span>
+        <section class="projects-grid">
+            <!-- Featured: Tiles -->
+            <div class="project-card featured">
+                <div class="project-media">
+                    <img src="assets/img/convex_collage.png" alt="Параметрическая плитка Convex 80x80">
                 </div>
-                <a href="projects/leather-clock.html" class="case-img-frame" title="View Case Study">
-                    <div class="case-img-grid-2">
-                        <img src="assets/img/leather_clock_front.png" alt="Tension Leather Clock Front Concept" loading="lazy">
-                        <img src="assets/img/leather_clock_back.png" alt="Tension Leather Clock 3D Printed Housing" loading="lazy">
+                <div class="project-info">
+                    <div>
+                        <span class="badge badge-accent">Флагманский R&D</span>
+                        <h3>Параметрическая плитка 80×80 мм (Convex & Waves)</h3>
+                        <p>
+                            Отказ от классического силикона: я разработал унифицированную модульную опалубку со сменными 3D-печатными фасадами. Это сократило путь от алгоритма до готовой гипсовой отливки с суток до 4 часов.
+                        </p>
                     </div>
-                </a>
-                <div style="font-size: 0.75rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>MATERIALS: Crazy Horse Leather + Steel + Polymer</span>
-                    <span>CAD: Rhino 3D</span>
-                </div>
-            </div>
-            <div class="case-info pad-lg">
-                <div>
-                    <span class="tag">Composite Product</span>
-                    <span class="tag">Leathercraft Tooling</span>
-                    <h3 class="case-title" data-i18n="case2_title">Tension Leather Clock & Embossing Tooling</h3>
-                    <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="case2_desc">
-                        An exploration of material contrast: a radial cut Crazy Horse leather dial suspended under tension inside a minimalist steel ring, backed by a custom 3D-printed structural movement housing.
-                    </p>
-                </div>
-                <table class="case-table">
-                    <tr>
-                        <td data-i18n="case2_ch_k">Challenge</td>
-                        <td data-i18n="case2_ch_v">Achieve crisp geometric tension and tactile embossing on pull-up leather without costly brass dies.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case2_sol_k">Solution</td>
-                        <td data-i18n="case2_sol_v">Parametric radial tab geometry + high-density polymer cold-press stamps and precision rear housing.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case2_imp_k">Result</td>
-                        <td data-i18n="case2_imp_v">5–7x tooling cost reduction and rapid visual/tactile prototyping in Rhino & Blender.</td>
-                    </tr>
-                </table>
-                <a href="projects/leather-clock.html" class="case-link" data-i18n="case2_btn">Inspect Concept & Tooling →</a>
-            </div>
-        </div>
-
-        <!-- Case 3: Algorithmic Extrusion & Vessels -->
-        <div class="grid-row case-item">
-            <div class="case-visual">
-                <div>
-                    <span class="tag tag-dark" data-i18n="case3_tag">CASE_03 // ALGORITHMIC EXTRUSION & ACCESSORY R&D</span>
-                </div>
-                <a href="projects/digital-fabrication.html" class="case-img-frame" title="View Case Study">
-                    <div class="case-img-grid-2">
-                        <img src="assets/img/instax_stand.png" alt="Ribbed Tactile Instax Stand" loading="lazy">
-                        <img src="assets/img/gh_algorithm.png" alt="Grasshopper Surface Deformation Algorithm" loading="lazy" style="object-fit: contain; background: #fff; padding: 0.5rem;">
+                    <div>
+                        <div class="project-specs">
+                            <span>Архитектурный гипс</span>
+                            <span>Терракота</span>
+                            <span>Grasshopper</span>
+                        </div>
+                        <a href="projects/parametric-tiles.html" class="btn btn-secondary" style="margin-top: 1.25rem; width: 100%;">
+                            Смотреть весь процесс и фото →
+                        </a>
                     </div>
-                </a>
-                <div style="font-size: 0.75rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>NOZZLE: 0.8mm // LAYER: 0.6mm Spiral</span>
-                    <span>ENGINE: Grasshopper + Custom Slicing</span>
                 </div>
             </div>
-            <div class="case-info pad-lg">
-                <div>
-                    <span class="tag">0.8mm Extrusion</span>
-                    <span class="tag">Differential Growth</span>
-                    <span class="tag">Tactile Objects</span>
-                    <h3 class="case-title" data-i18n="case3_title">Non-Planar Overhangs, Spiral Vessels & Analog Accessories</h3>
-                    <p style="color: var(--text-muted); font-size: 0.92rem;" data-i18n="case3_desc">
-                        Pushing FDM hardware with 0.8mm nozzles, 0.6mm layer heights, and custom Grasshopper toolpaths to produce structural ribbed textures, differential growth vessels, and tactile desk stands.
-                    </p>
+
+            <!-- Case 2: Leather Clock -->
+            <div class="project-card">
+                <div class="project-media">
+                    <img src="assets/img/leather_clock_front.png" alt="Часы на растяжении кожи">
                 </div>
-                <table class="case-table">
-                    <tr>
-                        <td data-i18n="case3_ch_k">Parameters</td>
-                        <td data-i18n="case3_ch_v">0.8mm nozzle // 1.2mm wall // 15 mm/s controlled extrusion // zero support material.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case3_sol_k">Portfolio</td>
-                        <td data-i18n="case3_sol_v">Ribbed Instax film stands, Differential Growth vases, Perlin noise planters, and parametric threads.</td>
-                    </tr>
-                    <tr>
-                        <td data-i18n="case3_imp_k">Impact</td>
-                        <td data-i18n="case3_imp_v">Layer lines transformed from a printing artifact into an intentional architectural rib texture.</td>
-                    </tr>
-                </table>
-                <a href="projects/digital-fabrication.html" class="case-link" data-i18n="case3_btn">Explore R&D Archive →</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- R&D ARCHIVE MINI-GRID -->
-    <div id="archive" class="section-bar">
-        <span data-i18n="sec_archive_l">03 // R&D Lab Archive</span>
-        <span data-i18n="sec_archive_r">Parametric Studies & Prototypes</span>
-    </div>
-
-    <section class="grid-row archive-grid">
-        <div class="archive-card">
-            <div>
-                <span class="tag">GH_DEF // 01</span>
-                <h4>Differential Growth Vessels</h4>
-                <p>Organic cellular expansion algorithms translated into continuous 0.8mm spiral-mode ceramic-like polymer vessels and drainage planters.</p>
-            </div>
-            <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent);">STATUS: SMALL-BATCH READY</div>
-        </div>
-        <div class="archive-card">
-            <div>
-                <span class="tag">GH_DEF // 02</span>
-                <h4>Slim Tea-Light & Coaster Matrices</h4>
-                <p>Multi-cavity 3D-printed casting molds and wave-interference coasters engineered for zero-seam mineral casting.</p>
-            </div>
-            <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent);">STATUS: PROTOTYPED</div>
-        </div>
-        <div class="archive-card">
-            <div>
-                <span class="tag">GH_DEF // 03</span>
-                <h4>Parametric Threads & Wall Mounts</h4>
-                <p>Custom pitch/tolerance helical threads generated in Grasshopper + Fusion 360 for modular lighting mounts and test-tube holders.</p>
-            </div>
-            <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent);">STATUS: PRODUCTION TOOLING</div>
-        </div>
-        <div class="archive-card">
-            <div>
-                <span class="tag">GH_DEF // 04</span>
-                <h4>Controlled Overhangs Study (06–20)</h4>
-                <p>20-iteration hardware calibration exploring unsupported bridging and loop textures at 15 mm/s on direct-drive extruders.</p>
-            </div>
-            <div style="font-size: 0.75rem; font-weight: 700; color: var(--accent);">STATUS: R&D VERIFIED</div>
-        </div>
-    </section>
-
-    <!-- PROCESS -->
-    <div id="process" class="section-bar">
-        <span data-i18n="sec_process_l">04 // Workflow</span>
-        <span data-i18n="sec_process_r">Screen to Physical Reality</span>
-    </div>
-
-    <section class="grid-row process-grid">
-        <div class="process-step">
-            <div class="step-num">01</div>
-            <h3 style="margin-bottom: 0.75rem;" data-i18n="step1_t">Research & Algorithm</h3>
-            <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="step1_d">
-                Visual search, material testing, or writing a custom Grasshopper definition tailored to your dimensions.
-            </p>
-        </div>
-        <div class="process-step">
-            <div class="step-num">02</div>
-            <h3 style="margin-bottom: 0.75rem;" data-i18n="step2_t">Modular Matrix Print</h3>
-            <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="step2_d">
-                We print the unified formwork and textured faceplate directly on FDM/SLA hardware—bypassing silicone.
-            </p>
-        </div>
-        <div class="process-step">
-            <div class="step-num">03</div>
-            <h3 style="margin-bottom: 0.75rem;" data-i18n="step3_t">Cast & Post-Process</h3>
-            <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="step3_d">
-                Mineral casting (gypsum/concrete), vibration degassing, edge chamfering, and hydrophobic sealing.
-            </p>
-        </div>
-        <div class="process-step">
-            <div class="step-num">04</div>
-            <h3 style="margin-bottom: 0.75rem;" data-i18n="step4_t">Delivery / CAD Handover</h3>
-            <p style="font-size: 0.85rem; color: var(--text-muted);" data-i18n="step4_d">
-                Worldwide shipping of finished tiles/tooling, or digital handover of STEP, STL, and G-code files.
-            </p>
-        </div>
-    </section>
-
-    <!-- CONTACT & MESSENGER DISPATCH -->
-    <div id="contact" class="section-bar">
-        <span data-i18n="sec_contact_l">05 // Direct Messenger Dispatch & Inquiry</span>
-        <span data-i18n="sec_contact_r">Instant routing to TG / WhatsApp / IG</span>
-    </div>
-
-    <section class="grid-row contact-section">
-        <div class="contact-info pad-lg">
-            <div>
-                <span class="tag" style="background: transparent; color: var(--bg-primary); border-color: var(--bg-primary);">Direct Line // No Middlemen</span>
-                <h2 style="font-size: 2.1rem; margin-top: 1rem; line-height: 1.1;" data-i18n="contact_title">Ready to commission a piece or engineer custom tooling?</h2>
-                <p data-i18n="contact_sub">
-                    Fill out the brief on the right and click your preferred messenger. The site will automatically format your project specs and open a direct chat with us—zero waiting, zero lost emails.
-                </p>
-
-                <div class="direct-channels">
-                    <a href="https://t.me/simonyanrr" data-channel-link="tg" target="_blank" rel="noopener" class="channel-btn">
-                        <span>01 // TELEGRAM DIRECT</span>
-                        <span>@SIMONYANRR ↗</span>
-                    </a>
-                    <a href="https://wa.me/972533455929" data-channel-link="wa" target="_blank" rel="noopener" class="channel-btn">
-                        <span>02 // WHATSAPP BUSINESS</span>
-                        <span>+972 53-345-5929 ↗</span>
-                    </a>
-                    <a href="https://instagram.com/feely_design" data-channel-link="ig" target="_blank" rel="noopener" class="channel-btn">
-                        <span>03 // INSTAGRAM PORTFOLIO & DM</span>
-                        <span>@FEELY_DESIGN ↗</span>
+                <div class="project-info">
+                    <div>
+                        <span class="badge">Предметный дизайн</span>
+                        <h3>Натяжные интерьерные часы из кожи</h3>
+                        <p>
+                            Циферблат из кожи Crazy Horse, растянутый радиальными лепестками на стальном обруче, с задним печатным корпусом механизма и штампами тиснения.
+                        </p>
+                    </div>
+                    <a href="projects/leather-clock.html" class="btn btn-secondary" style="margin-top: 1rem;">
+                        Подробнее о концепте →
                     </a>
                 </div>
             </div>
 
-            <div style="margin-top: 2.5rem; font-size: 0.82rem; line-height: 1.8; color: #B5B0A8; border-top: 1px solid #3A3835; padding-top: 1.25rem;">
-                <div><strong>BASE:</strong> Haifa, Israel (Local Pickup & International Dispatch)</div>
-                <div><strong>EMAIL:</strong> <a href="mailto:simonyan.creator@gmail.com?subject=%5BFEELY_LEAD%5D%20%D0%97%D0%B0%D1%8F%D0%B2%D0%BA%D0%B0%20%D1%81%20%D1%81%D0%B0%D0%B9%D1%82%D0%B0%20feelydesign.com" data-channel-link="email"><span class="email-val">simonyan.creator@gmail.com</span></a></div>
-                <div><strong>SUBJECT FILTER:</strong> <code>[FEELY_LEAD] Заявка с сайта feelydesign.com</code></div>
+            <!-- Case 3: Digital Fab -->
+            <div class="project-card">
+                <div class="project-media">
+                    <img src="assets/img/instax_stand.png" alt="Ребристый стенд Instax">
+                </div>
+                <div class="project-info">
+                    <div>
+                        <span class="badge">0.8mm Экструзия</span>
+                        <h3>Спиральная печать и аксессуары</h3>
+                        <p>
+                            Управление физикой нависаний и ребристой фактурой соплом 0.8 мм: подставки под снимки Instax, генеративные вазы и параметрическая резьба.
+                        </p>
+                    </div>
+                    <a href="projects/digital-fabrication.html" class="btn btn-secondary" style="margin-top: 1rem;">
+                        Смотреть модели и архив →
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- SERVICES (Коротко и ясно) -->
+        <div class="section-header" id="services">
+            <div>
+                <span class="badge">Форматы сотрудничества</span>
+                <h2>Чем я могу помочь вашему проекту</h2>
             </div>
         </div>
 
-        <div class="pad-lg">
-            <form id="inquiry-form" action="https://formsubmit.co/simonyan.creator@gmail.com" method="POST" onsubmit="return false;">
-                <input type="hidden" name="_subject" value="[FEELY_LEAD] Заявка с сайта feelydesign.com">
-                <input type="hidden" name="_captcha" value="false">
-                <input type="hidden" name="_template" value="table">
-                <div class="form-row-2">
-                    <div class="form-group">
-                        <label for="name" data-i18n="form_name">Your Name / Studio *</label>
-                        <input type="text" id="name" name="name" required placeholder="e.g., Alex / Interior Studio">
-                    </div>
-                    <div class="form-group">
-                        <label for="contact-method" data-i18n="form_contact">Your Handle or Phone (TG / WA / IG / Email) *</label>
-                        <input type="text" id="contact-method" name="contact" required placeholder="@username or +972...">
-                    </div>
+        <section class="projects-grid" style="margin-bottom: 2rem;">
+            <div class="project-card" style="padding: 2rem;">
+                <span class="badge badge-accent">01 // Продукт</span>
+                <h3>Авторская плитка и декор</h3>
+                <p>
+                    Отливка настенных панно, диптихов и триптихов из высокопрочного гипса и бетона для интерьерных дизайнеров и частных пространств.
+                </p>
+            </div>
+
+            <div class="project-card" style="padding: 2rem;">
+                <span class="badge badge-accent">02 // Технология</span>
+                <h3>Литьевые матрицы и оснастка</h3>
+                <p>
+                    Проектирование и 3D-печать модульных форм под заливку для ваших производств, шаблоны для мебельных мастерских и полимерные клише для кожи.
+                </p>
+            </div>
+        </section>
+
+        <!-- CONTACT SECTION (Удобный сбор заявок с живыми кнопками) -->
+        <section class="contact-grid" id="contact">
+            <div class="contact-left">
+                <span class="badge badge-accent" style="background: rgba(200, 75, 49, 0.2);">Прямой контакт</span>
+                <h2>Обсудим вашу идею?</h2>
+                <p>
+                    Напишите мне напрямую в мессенджер или заполните форму. Я лично отвечаю на все входящие запросы в течение пары часов.
+                </p>
+
+                <div class="direct-buttons">
+                    <a href="https://t.me/simonyanrr" target="_blank" rel="noopener" class="direct-btn">
+                        <span>Telegram: @simonyanrr</span>
+                        <span>Чат ↗</span>
+                    </a>
+                    <a href="https://wa.me/972533455929" target="_blank" rel="noopener" class="direct-btn">
+                        <span>WhatsApp: +972 53-345-5929</span>
+                        <span>Сообщение ↗</span>
+                    </a>
+                    <a href="https://instagram.com/feely_design" target="_blank" rel="noopener" class="direct-btn">
+                        <span>Instagram: @feely_design</span>
+                        <span>Direct ↗</span>
+                    </a>
                 </div>
 
-                <div class="form-row-2">
+                <div style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
+                    Email: simonyan.creator@gmail.com<br>
+                    Тема писем: <code>[FEELY_LEAD]</code>
+                </div>
+            </div>
+
+            <div>
+                <form id="inquiry-form" class="clean-form" onsubmit="return false;">
                     <div class="form-group">
-                        <label for="task-type" data-i18n="form_cat">Inquiry Type</label>
+                        <label for="name">Ваше имя / Студия *</label>
+                        <input type="text" id="name" name="name" required placeholder="Например: Роман, Студия интерьера">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contact-method">Контакт (Telegram, WhatsApp или телефон) *</label>
+                        <input type="text" id="contact-method" name="contact" required placeholder="@username или +7 / +972...">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="task-type">Что вас интересует?</label>
                         <select id="task-type" name="task_type">
-                            <option value="tiles">Parametric Gypsum Tiles (80×80 / Diptych / Wall Panel)</option>
-                            <option value="molds">Custom 3D-Printed Casting Matrices (Silicone-Free)</option>
-                            <option value="objects">Interior Objects (Leather Clock / Vessels / Stands)</option>
-                            <option value="tooling">Workshop Jigs, Templates & Leather Stamps</option>
-                            <option value="cad">Parametric CAD (Grasshopper / Fusion 360 / G-Code)</option>
+                            <option value="tiles">Плитка (Convex / Waves / Панно на стену)</option>
+                            <option value="molds">Печатные литьевые матрицы без силикона</option>
+                            <option value="objects">Предметный дизайн (Часы из кожи / Вазы)</option>
+                            <option value="tooling">Оснастка и кондукторы для мастерской</option>
+                            <option value="custom">Индивидуальный R&D / Grasshopper</option>
                         </select>
                     </div>
+
                     <div class="form-group">
-                        <label for="task-scale" data-i18n="form_scale">Estimated Scope / Format</label>
-                        <select id="task-scale" name="task_scale">
-                            <option value="prototype">Single Prototype / Sample Pack</option>
-                            <option value="small_batch">Small Batch (5–50 units / Diptych / Triptych)</option>
-                            <option value="custom_rd">Full R&D + Custom Mold / Tooling Package</option>
-                            <option value="consultation">Unsure — Need Engineering Consultation</option>
-                        </select>
+                        <label for="message">Пара слов о задаче *</label>
+                        <textarea id="message" name="message" rows="3" required placeholder="Какой объем, размеры, фактура или цвет вас интересуют?"></textarea>
                     </div>
-                </div>
 
-                <div class="form-group">
-                    <label for="message" data-i18n="form_msg">Project / Order Details *</label>
-                    <textarea id="message" name="message" rows="4" required placeholder="Describe the desired texture, dimensions, colorway (raw gypsum / terracotta), or workshop bottleneck..."></textarea>
-                </div>
-
-                <div>
-                    <label data-i18n="dispatch_label" style="display: block; margin-bottom: 0.5rem;">Send your formatted brief via:</label>
-                    <div class="dispatch-bar">
-                        <button type="button" class="btn-dispatch tg" data-dispatch="tg">
-                            <span>✈</span> <span data-i18n="btn_tg">Telegram (@simonyanrr)</span>
-                        </button>
-                        <button type="button" class="btn-dispatch wa" data-dispatch="wa">
-                            <span>💬</span> <span data-i18n="btn_wa">WhatsApp (+972533455929)</span>
-                        </button>
-                        <button type="button" class="btn-dispatch ig" data-dispatch="ig">
-                            <span>📷</span> <span data-i18n="btn_ig">Instagram (@feely_design)</span>
-                        </button>
-                        <button type="button" class="btn-dispatch email" data-dispatch="email">
-                            <span>✉</span> <span data-i18n="btn_email">Send Direct to Email</span>
-                        </button>
+                    <div style="margin-top: 0.5rem;">
+                        <label style="font-size: 0.8rem; font-family: var(--font-mono); color: #A09D98; display: block; margin-bottom: 0.5rem;">
+                            Куда отправить заявку:
+                        </label>
+                        <div class="dispatch-actions">
+                            <button type="button" class="btn btn-primary" data-dispatch="tg" style="background: #2AABEE;">
+                                В Telegram ✈
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dispatch="wa" style="background: #25D366; color: #fff;">
+                                В WhatsApp 💬
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dispatch="ig" style="background: #E1306C;">
+                                В Instagram 📷
+                            </button>
+                            <button type="button" class="btn btn-primary" data-dispatch="email" style="background: var(--accent);">
+                                На Почту ✉
+                            </button>
+                        </div>
                     </div>
-                </div>
 
-                <div id="dispatch-status" class="dispatch-status"></div>
-            </form>
-        </div>
-    </section>
+                    <div id="dispatch-status" style="display: none; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; background: #22201E; border-left: 3px solid var(--accent); color: #fff;"></div>
+                </form>
+            </div>
+        </section>
 
-    <!-- FLOATING QUICK CONTACT DOCK -->
-    <div class="floating-dock" aria-label="Quick Contact">
-        <a href="#" data-channel-link="tg" target="_blank" rel="noopener" class="dock-item">TG ↗</a>
-        <a href="#" data-channel-link="wa" target="_blank" rel="noopener" class="dock-item">WA ↗</a>
-        <a href="#" data-channel-link="ig" target="_blank" rel="noopener" class="dock-item">IG ↗</a>
-        <a href="#contact" class="dock-item" style="background: var(--accent); border-color: var(--accent);">BRIEF ↓</a>
     </div>
 
     <!-- FOOTER -->
     <footer>
-        <div>© 2026 FEELY DESIGN // R&D & DIGITAL FABRICATION LAB (FEELYDESIGN.COM)</div>
-        <div>ENGINEERED WITH GRASSHOPPER & RAW MATERIALS // HAIFA, IL</div>
+        <div class="footer-inner">
+            <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
+            <div><a href="projects/about.html">ОБО МНЕ</a> • ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ</div>
+        </div>
     </footer>
 
     <script src="assets/js/main.js"></script>
