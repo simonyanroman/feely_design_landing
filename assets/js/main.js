@@ -12,6 +12,7 @@ const FEELY_CONFIG = {
 const I18N = {
     en: {
         // GLOBAL HEADER & NAV
+        page_title: "FEELY DESIGN // Roman Simonyan — R&D Lab & Digital Fabrication",
         brand_name: "FEELY DESIGN // R&D LAB",
         nav_work: "Projects",
         nav_services: "Capabilities",
@@ -23,6 +24,14 @@ const I18N = {
         nav_order_print: "Request Script / Print →",
         nav_write_roman: "Message Roman →",
         breadcrumb_home: "HOME",
+        view_case_title: "Open Case Study →",
+        alt_author: "Roman Simonyan",
+        alt_c1_convex: "Convex 80×80 Gypsum Tile",
+        alt_c1_waves: "Waves Parametric Tile",
+        alt_c2_clock: "Crazy Horse Leather Tension Clock",
+        alt_c2_back: "3D Printed Movement Housing",
+        alt_c3_stand: "Corrugated Instax Photo Stand",
+        alt_c3_gh: "Grasshopper Attractor Definition",
 
         // MAIN HERO
         hero_tag1: "Parametric R&D",
@@ -178,6 +187,7 @@ const I18N = {
         footer_loc: "HAIFA, ISRAEL • WORLDWIDE SHIPPING & CAD"
     },
     ru: {
+        page_title: "FEELY DESIGN // Роман Симонян — R&D Lab & Digital Fabrication",
         brand_name: "FEELY DESIGN // R&D LAB",
         nav_work: "Проекты",
         nav_services: "Направления",
@@ -189,6 +199,14 @@ const I18N = {
         nav_order_print: "Заказать модель / печать →",
         nav_write_roman: "Написать Роману →",
         breadcrumb_home: "ГЛАВНАЯ",
+        view_case_title: "Открыть кейс",
+        alt_author: "Роман Симонян",
+        alt_c1_convex: "Плитка Convex 80×80",
+        alt_c1_waves: "Плитка Waves",
+        alt_c2_clock: "Часы из кожи Crazy Horse",
+        alt_c2_back: "Задний печатный корпус механизма",
+        alt_c3_stand: "Ребристая подставка Instax",
+        alt_c3_gh: "Ноды Grasshopper",
 
         hero_tag1: "Параметрический R&D",
         hero_tag2: "Печать матриц без силикона",
@@ -357,6 +375,17 @@ function setLanguage(lang) {
             el.setAttribute("title", I18N[lang][key]);
         }
     });
+
+    document.querySelectorAll("[data-i18n-alt]").forEach(el => {
+        const key = el.getAttribute("data-i18n-alt");
+        if (I18N[lang] && I18N[lang][key] !== undefined) {
+            el.setAttribute("alt", I18N[lang][key]);
+        }
+    });
+
+    if (I18N[lang] && I18N[lang].page_title && document.querySelector('title[data-i18n="page_title"]')) {
+        document.title = I18N[lang].page_title;
+    }
 
     document.querySelectorAll(".lang-btn").forEach(btn => {
         btn.classList.toggle("active", btn.getAttribute("data-lang") === lang);
