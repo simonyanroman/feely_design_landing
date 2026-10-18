@@ -86,23 +86,33 @@ const I18N = {
         case3_btn: "Explore visual model archive →",
 
         // CAPABILITIES
+        srv1_num: "[01 // PRODUCT]",
         srv1_title: "Architectural Tiles & Wall Panels",
         srv1_desc: "Bespoke 80×80mm gypsum tiles, diptychs, and dimensional relief wall compositions for interior designers and private spaces.",
         srv1_meta: "<strong>Deliverable:</strong> Finished cast batches in unbleached white or terracotta.",
+        srv2_num: "[02 // TOOLING]",
         srv2_title: "Casting Matrices & Workshop Tooling",
         srv2_desc: "Engineering and fabrication of modular formwork for mineral casting, furniture assembly templates, and cold-press leather dies.",
         srv2_meta: "<strong>Deliverable:</strong> Ready-to-use workshop tooling or CAD packages.",
+        srv3_num: "[03 // ALGORITHMS]",
         srv3_title: "Parametric CAD & Algorithm R&D",
         srv3_desc: "Generative surface scripts in Grasshopper, DFM optimization for batch production, and non-standard 3D printing toolpaths.",
         srv3_meta: "<strong>Deliverable:</strong> STEP/STL models, custom algorithms, and technical consulting.",
 
-        // CONTACT FORM
+        // CONTACT FORM & DETAILS
+        contact_tag: "Direct Line // No intermediaries",
         contact_title: "Have a project in mind?",
         contact_sub: "Fill out the brief on the right and pick your preferred messenger. Your inquiry will format instantly and open a direct chat with me, with an automatic copy sent to email.",
+        contact_base_k: "BASE:",
+        contact_base_v: "Haifa, Israel (Local Pickup & Worldwide Shipping)",
+        contact_subj_k: "EMAIL SUBJECT:",
         form_name: "Your Name / Studio *",
         form_contact: "Contact (Telegram, WhatsApp, or Phone) *",
         form_cat: "Inquiry Type",
         form_msg: "Briefly describe your project *",
+        placeholder_name: "Roman, Interior Studio",
+        placeholder_contact: "@username / +972...",
+        placeholder_msg: "Describe the desired volume, texture, color, or problem...",
         dispatch_label: "Send your formatted brief directly via:",
         opt_tiles: "Parametric Tiles (Convex / Waves / Wall Panels)",
         opt_molds: "3D-Printed Casting Matrices (Silicone-Free)",
@@ -116,7 +126,10 @@ const I18N = {
         about_quote: "“Every product begins with research — visual exploration, unique mathematics, or solving a manufacturing dead-end. For example, I completely abandoned silicone molding in favor of direct 3D-printed modular matrices with interchangeable faceplates, shrinking R&D from days down to hours.”",
         about_software: "Software Stack",
         about_hardware: "Hardware & Machines",
+        about_hardware_val: "3D Printing (FDM/SLA), 0.8+ mm nozzles, vibration mineral casting (gypsum & concrete)",
         about_materials: "Materials",
+        about_materials_val: "Architectural gypsum, terracotta iron-oxide pigments, Crazy Horse leather, technical polymers",
+        about_btn_contact: "Fill Out Project Brief →",
 
         // CASE 1 PAGE
         c1_hero_title: "Waves & Convex 80×80: Silicone-Free Parametric Gypsum Tiles",
@@ -133,6 +146,7 @@ const I18N = {
         c1_card2_d: "All tiles within a format family share the same outer retention clamp. To launch a new relief, only the thin faceplate needs to be printed and snapped in.",
         c1_card3_t: "Custom Commissions",
         c1_card3_d: "I cast custom compositions for interior projects and design ready-to-cast modular matrix packages for third-party workshops.",
+        case1_bottom_btn: "Commission Tiles / Molds →",
 
         // CASE 2 PAGE
         c2_hero_title: "Tension Leather Clock & Polymer Cold-Press Embossing Dies",
@@ -145,6 +159,7 @@ const I18N = {
         c2_card2_d: "CNC machining brass dies is costly for rapid prototyping. We print high-density polymer matrices with draft-angle compensation that easily handle cold-press tonnage.",
         c2_card3_t: "Commissions & Tooling",
         c2_card3_d: "Order bespoke tension clocks or commission custom embossing dies, patterns, and templates for your leather workshop.",
+        case2_bottom_btn: "Discuss Commission / Stamp →",
 
         // CASE 3 PAGE
         c3_hero_title: "Non-Planar Overhangs, Spiral Vessels & Tactile Objects",
@@ -157,6 +172,7 @@ const I18N = {
         c3_card2_d: "Every object in the archive is fully parametric: Differential Growth planters with drainage, weaved attractor vessels, and custom pitch helical threads.",
         c3_card3_t: "G-Code & Small Batches",
         c3_card3_d: "I provide optimized production G-code packages for 3D farms, license Grasshopper definitions, and fabricate physical product batches.",
+        case3_bottom_btn: "Request Script / Batch →",
 
         // FOOTER
         footer_loc: "HAIFA, ISRAEL • WORLDWIDE SHIPPING & CAD"
@@ -229,22 +245,32 @@ const I18N = {
         case3_h2_v: "Стенды для фото, вазы с дренажем, плафоны и кастомный G-code.",
         case3_btn: "Смотреть визуальный архив моделей →",
 
+        srv1_num: "[01 // ПРОДУКТ]",
         srv1_title: "Плитка и настенные панно",
         srv1_desc: "Авторская гипсовая плитка 80×80 мм, диптихи и крупные рельефные композиции для дизайнеров интерьера и архитектурных бюро.",
         srv1_meta: "<strong>Результат:</strong> Готовая серия отливок в натуральном цвете или терракоте.",
+        srv2_num: "[02 // ТЕХНОЛОГИЯ]",
         srv2_title: "Печатные матрицы и оснастка",
         srv2_desc: "Проектирование и изготовление модульной опалубки под гипсовое/бетонное литье, кондукторов для мебели и клише для тиснения кожи.",
         srv2_meta: "<strong>Результат:</strong> Готовая оснастка для мастерской или файлы под ваш станочный парк.",
+        srv3_num: "[03 // АЛГОРИТМЫ]",
         srv3_title: "Параметрический CAD / R&D",
         srv3_desc: "Генерация уникального рельефа в Grasshopper, адаптация изделий под серийное производство и нестандартные траектории 3D-печати.",
         srv3_meta: "<strong>Результат:</strong> Модели STEP/STL, генеративные скрипты и консультации.",
 
+        contact_tag: "Direct Line // Без посредников",
         contact_title: "Обсудим вашу задачу?",
         contact_sub: "Заполните короткий бриф справа и выберите удобный мессенджер. Заявка мгновенно сформируется и откроется в чате со мной, а копия улетит на почту.",
+        contact_base_k: "БАЗА:",
+        contact_base_v: "Хайфа, Израиль (Самовывоз & Международная доставка)",
+        contact_subj_k: "ТЕМА ПИСЕМ:",
         form_name: "Ваше имя / Студия *",
         form_contact: "Контакт (Telegram, WhatsApp или телефон) *",
         form_cat: "Направление запроса",
         form_msg: "Пара слов о задаче *",
+        placeholder_name: "Роман, Студия интерьера",
+        placeholder_contact: "@username / +972...",
+        placeholder_msg: "Опишите желаемый объем, фактуру, цвет или проблему...",
         dispatch_label: "Отправить готовую заявку напрямую:",
         opt_tiles: "Параметрическая плитка (Convex / Waves / Панно на стену)",
         opt_molds: "Печатные матрицы для литья гипса/бетона (без силикона)",
@@ -257,7 +283,10 @@ const I18N = {
         about_quote: "«Каждый свой продукт я начинаю с исследования — визуального поиска, необычного алгоритма или решения технологического тупика. Например, я полностью отказался от силикона в пользу прямой 3D-печати модульных матриц со сменными фасадами, сократив R&D с суток до нескольких часов».",
         about_software: "Стек программ",
         about_hardware: "Оборудование",
+        about_hardware_val: "3D-печать (FDM/SLA), сопла 0.8+ мм, вибролитье гипса и бетона",
         about_materials: "Материалы",
+        about_materials_val: "Архитектурный гипс, терракотовые пигменты, кожа Crazy Horse, полимеры",
+        about_btn_contact: "Заполнить бриф →",
 
         c1_hero_title: "Waves & Convex 80×80: Параметрическая плитка без силиконовых форм",
         c1_hero_sub: "Как я полностью исключил этап заливки силикона, создав унифицированную жесткую опалубку со сменными печатными вставками. Процесс от скрипта в Grasshopper до первой физической отливки сократился с 24 часов до 4 часов.",
@@ -273,6 +302,7 @@ const I18N = {
         c1_card2_d: "Все плитки одного формата (80×80 мм) используют один и тот же внешний контур с зажимами. Чтобы запустить в серию новую волну или купол, достаточно напечатать только тонкую фасадную пластину с нужным микрорельефом.",
         c1_card3_t: "Заказ плитки или матриц",
         c1_card3_d: "Я изготавливаю как готовые серии плитки и настенных панно для интерьерных проектов, так и разрабатываю матрицы под ключ для вашей мастерской.",
+        case1_bottom_btn: "Обсудить заказ плитки →",
 
         c2_hero_title: "Натяжные интерьерные часы из кожи и оснастка для тиснения",
         c2_hero_sub: "Соединение ремесленной мягкости кожи и точности цифрового производства: радиальный циферблат, натянутый лепестками на стальном обруче, и твердотельные полимерные штампы для холодного тиснения без латунных клише.",
@@ -284,6 +314,7 @@ const I18N = {
         c2_card2_d: "Фрезеровка латунных клише стоит дорого и не подходит для быстрого тестирования тактильной глубины. Мы печатаем высокоплотные полимерные матрицы с рассчитанными фасками, выдерживающими усилие пресса при холодном тиснении.",
         c2_card3_t: "Заказ объекта или штампа",
         c2_card3_d: "Вы можете заказать как авторские интерьерные часы, так и разработку клише, выкроек и шаблонов для вашей кожевенной студии.",
+        case2_bottom_btn: "Обсудить проект →",
 
         c3_hero_title: "Непланарные нависания, спиральные вазы и тактильные объекты",
         c3_hero_sub: "3D-принтер как ткацкий станок для расплавленного полимера: сочетая аттракторы в Grasshopper с широким соплом (0.8 мм) и медленной печатью (15 мм/с), мы создаем выразительные ребристые текстуры и контролируемые петли нависаний без единой поддержки.",
@@ -295,6 +326,7 @@ const I18N = {
         c3_card2_d: "Каждый объект в архиве лаборатории параметризован — пропорции, частоту волны и допуски можно пересчитать под нужные габариты: вазы Differential Growth, плетеные сосуды и настенные крепежи.",
         c3_card3_t: "Файлы и малые серии",
         c3_card3_d: "Мы готовим оптимизированные G-code пакеты для 3D-ферм, лицензируем определения Grasshopper и отливаем готовые физические серии.",
+        case3_bottom_btn: "Запросить скрипт или серию →",
 
         footer_loc: "ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ"
     }
@@ -309,6 +341,20 @@ function setLanguage(lang) {
         const key = el.getAttribute("data-i18n");
         if (I18N[lang] && I18N[lang][key] !== undefined) {
             el.innerHTML = I18N[lang][key];
+        }
+    });
+
+    document.querySelectorAll("[data-i18n-placeholder]").forEach(el => {
+        const key = el.getAttribute("data-i18n-placeholder");
+        if (I18N[lang] && I18N[lang][key] !== undefined) {
+            el.setAttribute("placeholder", I18N[lang][key]);
+        }
+    });
+
+    document.querySelectorAll("[data-i18n-title]").forEach(el => {
+        const key = el.getAttribute("data-i18n-title");
+        if (I18N[lang] && I18N[lang][key] !== undefined) {
+            el.setAttribute("title", I18N[lang][key]);
         }
     });
 
