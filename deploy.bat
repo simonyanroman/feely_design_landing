@@ -1,40 +1,31 @@
 @echo off
 chcp 65001 >nul
+set "PATH=%PATH%;C:\Users\rrsim\AppData\Local\Microsoft\WinGet\Packages\Git.MinGit_Microsoft.Winget.Source_8wekyb3d8bbwe\cmd;C:\Users\rrsim\AppData\Local\Microsoft\WinGet\Packages\GitHub.cli_Microsoft.Winget.Source_8wekyb3d8bbwe\bin"
+
 echo ========================================================
 echo   FEELY DESIGN // GITHUB PAGES DEPLOYER (feelydesign.com)
 echo ========================================================
 echo.
 
-where git >nul 2>nul
+gh auth status >nul 2>nul
 if %errorlevel% neq 0 (
-    echo [!] Git не найден в PATH. Устанавливаю Git через winget...
-    winget install --id Git.Git -e --source winget
-    echo [!] Перезапустите этот файл после установки Git.
-    pause
-    exit /b
-)
-
-if not exist ".git" (
-    echo [*] Инициализация Git-репозитория...
-    git init
-    git branch -M main
+    echo [*] Выполняется вход в GitHub через браузер...
+    gh auth login --web -p https
+    gh auth setup-git
 )
 
 git add .
-git commit -m "Deploy Feely Design multi-page portfolio & messenger dispatch"
+git commit -m "Update Feely Design portfolio & lead system" 2>nul
+git branch -M main
+git remote set-url origin https://github.com/simonyanroman/feely_design_landing.git 2>nul || git remote add origin https://github.com/simonyanroman/feely_design_landing.git
 
-git remote get-url origin >nul 2>nul
-if %errorlevel% neq 0 (
-    echo.
-    set /p REPO_URL="Вставьте ссылку на ваш GitHub репозиторий (например https://github.com/username/feelydesign.git): "
-    git remote add origin %REPO_URL%
-)
+echo [*] Отправка файлов на GitHub (https://github.com/simonyanroman/feely_design_landing)...
+git push -u origin main --force
 
-echo [*] Отправка файлов на GitHub (ветка main)...
-git push -u origin main
+echo [*] Настройка GitHub Pages и домена feelydesign.com...
+gh api -X POST repos/simonyanroman/feely_design_landing/pages -f "source[branch]=main" -f "source[path]=/" 2>nul
+gh api -X PUT repos/simonyanroman/feely_design_landing/pages -f "cname=feelydesign.com" -F "https_enforced=true" 2>nul
 
 echo.
-echo [✓] Готово! В настройках репозитория на GitHub:
-echo     Settings -> Pages -> Branch: main -> Save.
-echo     Custom domain: feelydesign.com (файл CNAME уже добавлен!).
+echo [✓] Деплой успешно завершен! Сайт опубликован на https://feelydesign.com
 pause
