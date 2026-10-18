@@ -3,252 +3,387 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FEELY DESIGN // Роман Симонян — Предметный R&D и параметрика</title>
-    <meta name="description" content="Feely Design: параметрическая плитка, тактильные объекты и разработка прямого 3D-печатного литья без силикона. Лаборатория Романа Симоняна.">
+    <title>FEELY DESIGN // Роман Симонян — R&D Lab & Digital Fabrication</title>
+    <meta name="description" content="Feely Design: параметрическая гипсовая плитка, прямое 3D-печатное литье без силикона, предметный дизайн и оснастка для мастерских. Роман Симонян.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
     <!-- HEADER -->
     <header>
-        <a href="index.html" class="brand">
-            <span class="brand-dot"></span>
-            <span>FEELY DESIGN</span>
+        <a href="index.html" class="logo-block">
+            <span class="logo-indicator"></span>
+            <span>FEELY DESIGN // R&D LAB</span>
         </a>
-        <nav class="nav-links">
-            <a href="#work">Работы</a>
-            <a href="#services">Направления</a>
-            <a href="projects/about.html">Обо мне</a>
-            <a href="#contact" class="btn-nav">Связаться</a>
+        <nav>
+            <a href="#work" data-i18n="nav_cases">Проекты</a>
+            <a href="#services" data-i18n="nav_services">Направления</a>
+            <a href="projects/about.html" data-i18n="nav_about">Обо мне</a>
         </nav>
+        <div class="header-controls">
+            <div class="lang-switch" aria-label="Language switcher">
+                <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <a href="#contact" class="cta-header" data-i18n="nav_cta">Обсудить проект →</a>
+        </div>
     </header>
 
-    <div class="page-container">
-
-        <!-- HERO SECTION (Личный голос автора + ваша фотография) -->
-        <section class="hero-section">
+    <!-- HERO SECTION (Голос автора + ваше фото + ключевая идея) -->
+    <section class="grid-row hero">
+        <div class="hero-main pad-lg">
             <div>
-                <span class="badge badge-accent">R&D Лаборатория предметного дизайна</span>
-                <h1 class="hero-title">Материализую цифровые алгоритмы в осязаемые предметы.</h1>
-                <p class="hero-subtitle">
-                    Я проектирую параметрический рельеф в Grasshopper, отливаю авторскую плитку из гипса без силиконовых форм и создаю предметы интерьера с честной фактурой.
+                <span class="tag tag-accent" data-i18n="hero_tag1">Параметрический R&D</span>
+                <span class="tag" data-i18n="hero_tag2">Печать матриц без силикона</span>
+                <span class="tag" data-i18n="hero_tag3">Предметный дизайн</span>
+                
+                <h1 class="hero-title" data-i18n="hero_title">
+                    Материализую цифровые алгоритмы в осязаемые предметы.
+                </h1>
+                
+                <p class="hero-sub" data-i18n="hero_sub">
+                    Я проектирую генеративный рельеф в Grasshopper, печатаю модульную опалубку со сменными фасадами без силикона и создаю тактильную гипсовую плитку, предметы интерьера и оснастку для мастерских.
                 </p>
-                <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="#work" class="btn btn-primary">Смотреть работы ↓</a>
-                    <a href="projects/about.html" class="btn btn-secondary">Обо мне и философии →</a>
-                </div>
             </div>
 
-            <div class="hero-author-card">
-                <div class="author-header">
-                    <img src="assets/img/roman_simonyan.jpg" alt="Роман Симонян" class="author-avatar">
-                    <div class="author-meta">
+            <div class="hero-actions">
+                <a href="#work" class="btn-primary" data-i18n="hero_btn_cases">Смотреть работы ↓</a>
+                <a href="projects/about.html" class="btn-secondary" data-i18n="hero_btn_about">Обо мне и манифест →</a>
+            </div>
+        </div>
+
+        <!-- Боковая авторская карточка Романа -->
+        <div class="hero-author-sidebar">
+            <div>
+                <div class="author-card-header">
+                    <img src="assets/img/roman_simonyan.jpg" alt="Роман Симонян" class="author-avatar-img">
+                    <div class="author-title">
                         <h3>Роман Симонян</h3>
                         <p>Основатель Feely Design</p>
-                        <p style="font-size: 0.78rem; color: var(--accent);">Хайфа, Израиль • Worldwide</p>
+                        <p style="color: var(--accent); font-weight: 700; margin-top: 0.2rem;">Хайфа • Worldwide</p>
                     </div>
                 </div>
-                <div class="author-bio-snippet">
-                    «Каждый свой продукт я начинаю с исследования — визуального поиска, уникального алгоритма или решения технологического тупика. Для меня важно, чтобы вы чувствовали глубину продукта».
-                </div>
-            </div>
-        </section>
 
-        <!-- PORTFOLIO / WORK (Чистые карточки вместо плотного текста) -->
-        <div class="section-header" id="work">
-            <div>
-                <span class="badge">Портфолио проектов</span>
-                <h2>Избранные работы</h2>
+                <div class="author-quote" data-i18n="author_quote">
+                    «Каждый свой продукт я начинаю с исследования — визуального поиска, уникального алгоритма или решения технологического тупика. Важно, чтобы вы чувствовали глубину продукта».
+                </div>
+
+                <ul class="spec-list">
+                    <li>
+                        <span data-i18n="spec_innov_k">Технология</span>
+                        <span data-i18n="spec_innov_v">Прямая печать матриц (Zero Silicone)</span>
+                    </li>
+                    <li>
+                        <span data-i18n="spec_cad_k">CAD / Алгоритмы</span>
+                        <span data-i18n="spec_cad_v">Rhino + Grasshopper / Fusion / Blender</span>
+                    </li>
+                    <li>
+                        <span data-i18n="spec_mat_k">Материалы</span>
+                        <span data-i18n="spec_mat_v">Гипс, Терракота, Кожа, Полимеры</span>
+                    </li>
+                </ul>
             </div>
-            <a href="projects/about.html" style="font-size: 0.9rem; font-weight: 600; color: var(--accent);">Подробнее об исследованиях →</a>
+
+            <div class="pad-md" style="font-size: 0.8rem; color: var(--text-muted); border-top: 1px solid var(--border-color);" data-i18n="status_line">
+                [СТАТУС]: Открыты слоты на R&D, плитку и прототипирование в этом месяце.
+            </div>
         </div>
+    </section>
 
-        <section class="projects-grid">
-            <!-- Featured: Tiles -->
-            <div class="project-card featured">
-                <div class="project-media">
-                    <img src="assets/img/convex_collage.png" alt="Параметрическая плитка Convex 80x80">
+    <!-- MARQUEE -->
+    <div class="marquee-wrapper">
+        <div class="marquee-content">
+            SILICONE-FREE MODULAR MOLDS &nbsp;///&nbsp; PARAMETRIC GYPSUM TILES (80×80 / DIPTYCHS) &nbsp;///&nbsp; GRASSHOPPER ALGORITHMS &nbsp;///&nbsp; TENSION LEATHER OBJECTS & EMBOSSING STAMPS &nbsp;///&nbsp; 0.8MM SPIRAL VASE EXTRUSION &nbsp;///&nbsp; WORKSHOP JIGS & TOOLING &nbsp;///&nbsp;
+        </div>
+    </div>
+
+    <!-- WORK SECTION (Секция с точной привязкой скролла) -->
+    <div id="work" class="section-bar">
+        <span data-i18n="sec_cases_l">01 // Избранные проекты</span>
+        <span data-i18n="sec_cases_r">Визуальные исследования и продукты</span>
+    </div>
+
+    <section class="grid-row" style="border-bottom: none;">
+        <!-- Project 1: Tiles -->
+        <div class="grid-row case-item">
+            <div class="case-visual">
+                <div>
+                    <span class="tag tag-dark">CASE_01 // МОДУЛЬНОЕ ЛИТЬЕ</span>
                 </div>
-                <div class="project-info">
-                    <div>
-                        <span class="badge badge-accent">Флагманский R&D</span>
-                        <h3>Параметрическая плитка 80×80 мм (Convex & Waves)</h3>
-                        <p>
-                            Отказ от классического силикона: я разработал унифицированную модульную опалубку со сменными 3D-печатными фасадами. Это сократило путь от алгоритма до готовой гипсовой отливки с суток до 4 часов.
-                        </p>
+                <a href="projects/parametric-tiles.html" class="case-img-frame" title="Открыть кейс">
+                    <div class="case-img-grid-2">
+                        <img src="assets/img/convex_collage.png" alt="Плитка Convex 80x80 в гипсе и терракоте" loading="lazy">
+                        <img src="assets/img/waves_result.jpg" alt="Плитка Waves с глубокой игрой теней" loading="lazy">
                     </div>
-                    <div>
-                        <div class="project-specs">
-                            <span>Архитектурный гипс</span>
-                            <span>Терракота</span>
-                            <span>Grasshopper</span>
+                </a>
+                <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+                    <span>ФОРМАТ: 80×80 мм (Диптихи / Панно)</span>
+                    <span>ЦВЕТА: Натуральный гипс / Терракота</span>
+                </div>
+            </div>
+
+            <div class="case-info pad-lg">
+                <div>
+                    <span class="tag tag-accent">Флагманский R&D</span>
+                    <span class="tag">Без силикона</span>
+                    <h3 class="case-title" data-i18n="case1_title">Waves & Convex 80×80: Параметрическая плитка без силикона</h3>
+                    <p class="case-desc" data-i18n="case1_desc">
+                        Вместо классических силиконовых форм я создал унифицированную жесткую опалубку со сменными 3D-печатными фасадами. Это снижает себестоимость R&D в 4 раза и ускоряет путь от экрана до готовой отливки до нескольких часов.
+                    </p>
+
+                    <div class="case-highlights">
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case1_h1_k">Инновация</span>
+                            <span class="highlight-val" data-i18n="case1_h1_v">Прямая печать матриц со сменными фасадами — минус 24 часа на силикон.</span>
                         </div>
-                        <a href="projects/parametric-tiles.html" class="btn btn-secondary" style="margin-top: 1.25rem; width: 100%;">
-                            Смотреть весь процесс и фото →
-                        </a>
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case1_h2_k">Геометрия</span>
+                            <span class="highlight-val" data-i18n="case1_h2_v">Алгоритм удерживает плоский кант для бесшовного монтажа в настенные панно.</span>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <!-- Case 2: Leather Clock -->
-            <div class="project-card">
-                <div class="project-media">
-                    <img src="assets/img/leather_clock_front.png" alt="Часы на растяжении кожи">
-                </div>
-                <div class="project-info">
-                    <div>
-                        <span class="badge">Предметный дизайн</span>
-                        <h3>Натяжные интерьерные часы из кожи</h3>
-                        <p>
-                            Циферблат из кожи Crazy Horse, растянутый радиальными лепестками на стальном обруче, с задним печатным корпусом механизма и штампами тиснения.
-                        </p>
-                    </div>
-                    <a href="projects/leather-clock.html" class="btn btn-secondary" style="margin-top: 1rem;">
-                        Подробнее о концепте →
-                    </a>
-                </div>
-            </div>
-
-            <!-- Case 3: Digital Fab -->
-            <div class="project-card">
-                <div class="project-media">
-                    <img src="assets/img/instax_stand.png" alt="Ребристый стенд Instax">
-                </div>
-                <div class="project-info">
-                    <div>
-                        <span class="badge">0.8mm Экструзия</span>
-                        <h3>Спиральная печать и аксессуары</h3>
-                        <p>
-                            Управление физикой нависаний и ребристой фактурой соплом 0.8 мм: подставки под снимки Instax, генеративные вазы и параметрическая резьба.
-                        </p>
-                    </div>
-                    <a href="projects/digital-fabrication.html" class="btn btn-secondary" style="margin-top: 1rem;">
-                        Смотреть модели и архив →
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SERVICES (Коротко и ясно) -->
-        <div class="section-header" id="services">
-            <div>
-                <span class="badge">Форматы сотрудничества</span>
-                <h2>Чем я могу помочь вашему проекту</h2>
+                <a href="projects/parametric-tiles.html" class="case-link" data-i18n="case1_btn">
+                    Смотреть фото процесса и технологию →
+                </a>
             </div>
         </div>
 
-        <section class="projects-grid" style="margin-bottom: 2rem;">
-            <div class="project-card" style="padding: 2rem;">
-                <span class="badge badge-accent">01 // Продукт</span>
-                <h3>Авторская плитка и декор</h3>
-                <p>
-                    Отливка настенных панно, диптихов и триптихов из высокопрочного гипса и бетона для интерьерных дизайнеров и частных пространств.
-                </p>
-            </div>
-
-            <div class="project-card" style="padding: 2rem;">
-                <span class="badge badge-accent">02 // Технология</span>
-                <h3>Литьевые матрицы и оснастка</h3>
-                <p>
-                    Проектирование и 3D-печать модульных форм под заливку для ваших производств, шаблоны для мебельных мастерских и полимерные клише для кожи.
-                </p>
-            </div>
-        </section>
-
-        <!-- CONTACT SECTION (Удобный сбор заявок с живыми кнопками) -->
-        <section class="contact-grid" id="contact">
-            <div class="contact-left">
-                <span class="badge badge-accent" style="background: rgba(200, 75, 49, 0.2);">Прямой контакт</span>
-                <h2>Обсудим вашу идею?</h2>
-                <p>
-                    Напишите мне напрямую в мессенджер или заполните форму. Я лично отвечаю на все входящие запросы в течение пары часов.
-                </p>
-
-                <div class="direct-buttons">
-                    <a href="https://t.me/simonyanrr" target="_blank" rel="noopener" class="direct-btn">
-                        <span>Telegram: @simonyanrr</span>
-                        <span>Чат ↗</span>
-                    </a>
-                    <a href="https://wa.me/972533455929" target="_blank" rel="noopener" class="direct-btn">
-                        <span>WhatsApp: +972 53-345-5929</span>
-                        <span>Сообщение ↗</span>
-                    </a>
-                    <a href="https://instagram.com/feely_design" target="_blank" rel="noopener" class="direct-btn">
-                        <span>Instagram: @feely_design</span>
-                        <span>Direct ↗</span>
-                    </a>
+        <!-- Project 2: Leather Clock -->
+        <div class="grid-row case-item">
+            <div class="case-visual">
+                <div>
+                    <span class="tag tag-dark">CASE_02 // СИНТЕЗ МАТЕРИАЛОВ</span>
                 </div>
-
-                <div style="margin-top: 2rem; font-size: 0.85rem; color: #888;">
-                    Email: simonyan.creator@gmail.com<br>
-                    Тема писем: <code>[FEELY_LEAD]</code>
+                <a href="projects/leather-clock.html" class="case-img-frame" title="Открыть кейс">
+                    <div class="case-img-grid-2">
+                        <img src="assets/img/leather_clock_front.png" alt="Часы из кожи Crazy Horse" loading="lazy">
+                        <img src="assets/img/leather_clock_back.png" alt="Задний печатный корпус механизма" loading="lazy">
+                    </div>
+                </a>
+                <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+                    <span>МАТЕРИАЛЫ: Кожа Crazy Horse + Сталь + Полимер</span>
+                    <span>CAD: Rhino 3D</span>
                 </div>
             </div>
 
+            <div class="case-info pad-lg">
+                <div>
+                    <span class="tag">Предметный дизайн</span>
+                    <span class="tag">Штампы для кожи</span>
+                    <h3 class="case-title" data-i18n="case2_title">Концепт часов на растяжении кожи и штампы тиснения</h3>
+                    <p class="case-desc" data-i18n="case2_desc">
+                        Исследование натяжения: циферблат из кожи Crazy Horse растянут лепестками на стальном обруче. В дополнение к часам — печатные полимерные штампы для холодного тиснения без дорогих латунных клише.
+                    </p>
+
+                    <div class="case-highlights">
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case2_h1_k">Конструкция</span>
+                            <span class="highlight-val" data-i18n="case2_h1_v">Радиальное натяжение мембраны + скрытый печатный корпус механизма.</span>
+                        </div>
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case2_h2_k">Оснастка</span>
+                            <span class="highlight-val" data-i18n="case2_h2_v">Твердотельные клише для проверки тактильной глубины тиснения.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="projects/leather-clock.html" class="case-link" data-i18n="case2_btn">
+                    Смотреть концепт и рендеры →
+                </a>
+            </div>
+        </div>
+
+        <!-- Project 3: Digital Fab -->
+        <div class="grid-row case-item">
+            <div class="case-visual">
+                <div>
+                    <span class="tag tag-dark">CASE_03 // ЭКСТРУЗИЯ И АРХИВ</span>
+                </div>
+                <a href="projects/digital-fabrication.html" class="case-img-frame" title="Открыть кейс">
+                    <div class="case-img-grid-2">
+                        <img src="assets/img/instax_stand.png" alt="Ребристая подставка Instax" loading="lazy">
+                        <img src="assets/img/gh_algorithm.png" alt="Ноды Grasshopper" loading="lazy" style="object-fit: contain; background: #fff; padding: 0.5rem;">
+                    </div>
+                </a>
+                <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
+                    <span>ПАРАМЕТРЫ: Сопло 0.8 мм // Слой 0.6 мм</span>
+                    <span>АЛГОРИТМ: Grasshopper Attractors</span>
+                </div>
+            </div>
+
+            <div class="case-info pad-lg">
+                <div>
+                    <span class="tag">0.8mm Nozzle</span>
+                    <span class="tag">Differential Growth</span>
+                    <h3 class="case-title" data-i18n="case3_title">Спиральная печать, ребристые стенды и архив R&D</h3>
+                    <p class="case-desc" data-i18n="case3_desc">
+                        Превращение физики слоев 3D-печати в архитектурный прием: медленная печать широким соплом нависаний без поддержек, подставки под Instax, вазы Differential Growth и параметрическая резьба.
+                    </p>
+
+                    <div class="case-highlights">
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case3_h1_k">Физика</span>
+                            <span class="highlight-val" data-i18n="case3_h1_v">Сопло 0.8 мм / Стенка 1.2 мм / Скорость 15 мм/с / Спиральный режим.</span>
+                        </div>
+                        <div class="highlight-row">
+                            <span class="highlight-label" data-i18n="case3_h2_k">Продукты</span>
+                            <span class="highlight-val" data-i18n="case3_h2_v">Стенды для фото, вазы с дренажем, плафоны и кастомный G-code.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="projects/digital-fabrication.html" class="case-link" data-i18n="case3_btn">
+                    Смотреть визуальный архив моделей →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES SECTION -->
+    <div id="services" class="section-bar">
+        <span data-i18n="sec_services_l">02 // Направления работы</span>
+        <span data-i18n="sec_services_r">Чем я могу помочь вашему проекту</span>
+    </div>
+
+    <section class="grid-row services-grid">
+        <div class="service-card pad-lg">
             <div>
-                <form id="inquiry-form" class="clean-form" onsubmit="return false;">
+                <span class="service-num">[01 // ПРОДУКТ]</span>
+                <h2 class="service-title" data-i18n="srv1_title">Плитка и настенные панно</h2>
+                <p class="service-desc" data-i18n="srv1_desc">
+                    Авторская гипсовая плитка 80×80 мм, диптихи и крупные рельефные композиции для дизайнеров интерьера и архитектурных бюро.
+                </p>
+            </div>
+            <div class="service-meta" data-i18n="srv1_meta">
+                <strong>Результат:</strong> Готовая серия отливок в натуральном цвете или терракоте.
+            </div>
+        </div>
+
+        <div class="service-card pad-lg">
+            <div>
+                <span class="service-num">[02 // ТЕХНОЛОГИЯ]</span>
+                <h2 class="service-title" data-i18n="srv2_title">Печатные матрицы и оснастка</h2>
+                <p class="service-desc" data-i18n="srv2_desc">
+                    Проектирование и изготовление модульной опалубки под гипсовое/бетонное литье, кондукторов для мебели и клише для тиснения кожи.
+                </p>
+            </div>
+            <div class="service-meta" data-i18n="srv2_meta">
+                <strong>Результат:</strong> Готовая оснастка для мастерской или файлы под ваш станочный парк.
+            </div>
+        </div>
+
+        <div class="service-card pad-lg">
+            <div>
+                <span class="service-num">[03 // АЛГОРИТМЫ]</span>
+                <h2 class="service-title" data-i18n="srv3_title">Параметрический CAD / R&D</h2>
+                <p class="service-desc" data-i18n="srv3_desc">
+                    Генерация уникального рельефа в Grasshopper, адаптация изделий под серийное производство и нестандартные траектории 3D-печати.
+                </p>
+            </div>
+            <div class="service-meta" data-i18n="srv3_meta">
+                <strong>Результат:</strong> Модели STEP/STL, генеративные скрипты и консультации.
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <div id="contact" class="section-bar">
+        <span data-i18n="sec_contact_l">03 // Прямая связь & Заявка</span>
+        <span data-i18n="sec_contact_r">Ответ в течение 1–2 часов</span>
+    </div>
+
+    <section class="grid-row contact-section">
+        <div class="contact-info pad-lg">
+            <div>
+                <span class="tag" style="background: transparent; color: var(--bg-primary); border-color: var(--bg-primary);">Direct Line // Без посредников</span>
+                <h2 style="font-size: 2.2rem; margin-top: 1rem; line-height: 1.1;" data-i18n="contact_title">Обсудим вашу задачу?</h2>
+                <p data-i18n="contact_sub">
+                    Заполните короткий бриф справа и выберите удобный мессенджер. Заявка мгновенно сформируется и откроется в чате со мной, а копия улетит на почту.
+                </p>
+
+                <div class="direct-channels">
+                    <a href="https://t.me/simonyanrr" target="_blank" rel="noopener" class="channel-btn">
+                        <span>01 // TELEGRAM DIRECT</span>
+                        <span>@SIMONYANRR ↗</span>
+                    </a>
+                    <a href="https://wa.me/972533455929" target="_blank" rel="noopener" class="channel-btn">
+                        <span>02 // WHATSAPP BUSINESS</span>
+                        <span>+972 53-345-5929 ↗</span>
+                    </a>
+                    <a href="https://instagram.com/feely_design" target="_blank" rel="noopener" class="channel-btn">
+                        <span>03 // INSTAGRAM PORTFOLIO</span>
+                        <span>@FEELY_DESIGN ↗</span>
+                    </a>
+                </div>
+            </div>
+
+            <div style="margin-top: 2.5rem; font-size: 0.82rem; line-height: 1.8; color: #B5B0A8; border-top: 1px solid #3A3835; padding-top: 1.25rem;">
+                <div><strong>БАЗА:</strong> Хайфа, Израиль (Самовывоз & Международная доставка)</div>
+                <div><strong>EMAIL:</strong> simonyan.creator@gmail.com</div>
+                <div><strong>ТЕМА ПИСЕМ:</strong> <code>[FEELY_LEAD]</code></div>
+            </div>
+        </div>
+
+        <div class="pad-lg">
+            <form id="inquiry-form" onsubmit="return false;">
+                <div class="form-row-2">
                     <div class="form-group">
-                        <label for="name">Ваше имя / Студия *</label>
+                        <label for="name" data-i18n="form_name">Ваше имя / Студия *</label>
                         <input type="text" id="name" name="name" required placeholder="Например: Роман, Студия интерьера">
                     </div>
-
                     <div class="form-group">
-                        <label for="contact-method">Контакт (Telegram, WhatsApp или телефон) *</label>
-                        <input type="text" id="contact-method" name="contact" required placeholder="@username или +7 / +972...">
+                        <label for="contact-method" data-i18n="form_contact">Контакт (Telegram, WhatsApp или телефон) *</label>
+                        <input type="text" id="contact-method" name="contact" required placeholder="@username или +972...">
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="task-type">Что вас интересует?</label>
-                        <select id="task-type" name="task_type">
-                            <option value="tiles">Плитка (Convex / Waves / Панно на стену)</option>
-                            <option value="molds">Печатные литьевые матрицы без силикона</option>
-                            <option value="objects">Предметный дизайн (Часы из кожи / Вазы)</option>
-                            <option value="tooling">Оснастка и кондукторы для мастерской</option>
-                            <option value="custom">Индивидуальный R&D / Grasshopper</option>
-                        </select>
+                <div class="form-group">
+                    <label for="task-type" data-i18n="form_cat">Направление запроса</label>
+                    <select id="task-type" name="task_type">
+                        <option value="tiles">Параметрическая плитка (Convex / Waves / Панно на стену)</option>
+                        <option value="molds">Печатные матрицы для литья гипса/бетона (без силикона)</option>
+                        <option value="objects">Предметный дизайн (Часы из кожи / Вазы / Стенды)</option>
+                        <option value="tooling">Оснастка, шаблоны и штампы для мастерских</option>
+                        <option value="cad">Параметрический CAD / Grasshopper R&D</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message" data-i18n="form_msg">Пара слов о задаче *</label>
+                    <textarea id="message" name="message" rows="3" required placeholder="Опишите желаемый объем, фактуру, цвет или проблему..."></textarea>
+                </div>
+
+                <div>
+                    <label data-i18n="dispatch_label" style="display: block; margin-bottom: 0.5rem;">Отправить готовую заявку напрямую:</label>
+                    <div class="dispatch-bar">
+                        <button type="button" class="btn-dispatch tg" data-dispatch="tg">
+                            <span>✈</span> <span>Telegram (@simonyanrr)</span>
+                        </button>
+                        <button type="button" class="btn-dispatch wa" data-dispatch="wa">
+                            <span>💬</span> <span>WhatsApp</span>
+                        </button>
+                        <button type="button" class="btn-dispatch ig" data-dispatch="ig">
+                            <span>📷</span> <span>Instagram</span>
+                        </button>
+                        <button type="button" class="btn-dispatch email" data-dispatch="email">
+                            <span>✉</span> <span>На Почту</span>
+                        </button>
                     </div>
+                </div>
 
-                    <div class="form-group">
-                        <label for="message">Пара слов о задаче *</label>
-                        <textarea id="message" name="message" rows="3" required placeholder="Какой объем, размеры, фактура или цвет вас интересуют?"></textarea>
-                    </div>
-
-                    <div style="margin-top: 0.5rem;">
-                        <label style="font-size: 0.8rem; font-family: var(--font-mono); color: #A09D98; display: block; margin-bottom: 0.5rem;">
-                            Куда отправить заявку:
-                        </label>
-                        <div class="dispatch-actions">
-                            <button type="button" class="btn btn-primary" data-dispatch="tg" style="background: #2AABEE;">
-                                В Telegram ✈
-                            </button>
-                            <button type="button" class="btn btn-primary" data-dispatch="wa" style="background: #25D366; color: #fff;">
-                                В WhatsApp 💬
-                            </button>
-                            <button type="button" class="btn btn-primary" data-dispatch="ig" style="background: #E1306C;">
-                                В Instagram 📷
-                            </button>
-                            <button type="button" class="btn btn-primary" data-dispatch="email" style="background: var(--accent);">
-                                На Почту ✉
-                            </button>
-                        </div>
-                    </div>
-
-                    <div id="dispatch-status" style="display: none; padding: 0.75rem 1rem; border-radius: var(--radius-sm); font-size: 0.85rem; background: #22201E; border-left: 3px solid var(--accent); color: #fff;"></div>
-                </form>
-            </div>
-        </section>
-
-    </div>
+                <div id="dispatch-status" class="dispatch-status"></div>
+            </form>
+        </div>
+    </section>
 
     <!-- FOOTER -->
     <footer>
-        <div class="footer-inner">
-            <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
-            <div><a href="projects/about.html">ОБО МНЕ</a> • ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ</div>
-        </div>
+        <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
+        <div>ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ</div>
     </footer>
 
     <script src="assets/js/main.js"></script>

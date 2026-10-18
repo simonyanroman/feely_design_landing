@@ -3,91 +3,83 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Роман Симонян // Feely Design — Об авторе</title>
+    <title>РОМАН СИМОНЯН // FEELY DESIGN — МАНИФЕСТ И О СТУДИИ</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
     <header>
-        <a href="../index.html" class="brand">
-            <span class="brand-dot"></span>
-            <span>FEELY DESIGN</span>
+        <a href="../index.html" class="logo-block">
+            <span class="logo-indicator"></span>
+            <span>FEELY DESIGN // R&D LAB</span>
         </a>
-        <nav class="nav-links">
-            <a href="../index.html#work">Работы</a>
-            <a href="about.html" class="active">Обо мне</a>
-            <a href="../index.html#contact" class="btn-nav">Связаться</a>
+        <nav>
+            <a href="../index.html#work">Все проекты</a>
+            <a href="../index.html#services">Направления</a>
         </nav>
+        <div class="header-controls">
+            <a href="../index.html#contact" class="cta-header">Написать Роману →</a>
+        </div>
     </header>
 
-    <main class="page-container" style="padding-top: 3rem; padding-bottom: 5rem;">
-        <div class="about-hero-grid">
-            <div class="about-photo-wrapper">
-                <img src="../assets/img/roman_simonyan.jpg" alt="Роман Симонян — Feely Design" class="about-photo">
-                <div class="photo-badge">
-                    <span>Роман Симонян</span>
-                    <span class="photo-badge-sub">Основатель Feely Design • Хайфа</span>
-                </div>
-            </div>
-
-            <div class="about-content">
-                <span class="badge badge-accent">Манифест & Подход</span>
-                <h1 class="about-title">Я создаю осязаемый дизайн через алгоритмы и физику материалов.</h1>
-                
-                <p class="lead-text">
-                    Привет! Меня зовут Роман Симонян. Я основал <strong>Feely Design</strong>, потому что верю: настоящий предметный дизайн должен обладать глубиной, которую человек чувствует кончиками пальцев.
-                </p>
-
-                <p>
-                    Каждый мой проект начинается с исследования. Это может быть поиск необычного визуального ритма в математической формуле, написание генеративного скрипта в Grasshopper или решение сложной производственной задачи.
-                </p>
-
-                <div class="quote-box">
-                    «Я не использую силиконовые формы. Вместо суток ожидания и дорогого литья я разработал технологию прямой 3D-печати модульных матриц со сменными фасадами. Это сокращает путь от идеи на экране до физической отливки до нескольких часов».
-                </div>
-
-                <div class="about-specs-grid">
-                    <div class="about-spec-item">
-                        <span class="spec-label">Инструменты</span>
-                        <strong>Rhino + Grasshopper, Fusion 360, Blender 3D</strong>
-                    </div>
-                    <div class="about-spec-item">
-                        <span class="spec-label">Производство</span>
-                        <strong>3D-печать (FDM/SLA), литье гипса и бетона, работа с кожей</strong>
-                    </div>
-                    <div class="about-spec-item">
-                        <span class="spec-label">Философия</span>
-                        <strong>Минимум визуального шума, честные материалы, акцент на игру света и тени</strong>
-                    </div>
-                    <div class="about-spec-item">
-                        <span class="spec-label">Формат работы</span>
-                        <strong>Авторские серии, разработка изделий под ключ, оснастка для мастерских</strong>
-                    </div>
-                </div>
-
-                <div style="margin-top: 2.5rem; display: flex; gap: 1rem; flex-wrap: wrap;">
-                    <a href="https://t.me/simonyanrr" target="_blank" rel="noopener" class="btn btn-primary">
-                        Написать в Telegram ↗
-                    </a>
-                    <a href="https://instagram.com/feely_design" target="_blank" rel="noopener" class="btn btn-secondary">
-                        Instagram @feely_design ↗
-                    </a>
-                    <a href="../index.html#contact" class="btn btn-secondary">
-                        Заполнить бриф
-                    </a>
-                </div>
+    <section class="grid-row about-grid">
+        <div class="about-photo-panel">
+            <img src="../assets/img/roman_simonyan.jpg" alt="Роман Симонян" class="about-photo-full">
+            <div style="font-size: 0.85rem; line-height: 1.6;">
+                <div style="font-weight: 700;">РОМАН СИМОНЯН</div>
+                <div style="color: var(--text-muted);">Основатель Feely Design</div>
+                <div style="color: var(--accent); font-weight: 700; margin-top: 0.25rem;">Хайфа, Израиль • Worldwide</div>
             </div>
         </div>
-    </main>
+
+        <div class="about-bio-panel">
+            <div>
+                <span class="tag tag-accent">Манифест Feely Design</span>
+                <h1 style="font-size: clamp(2rem, 3.5vw, 2.8rem); line-height: 1.1; margin: 1rem 0 1.5rem 0;">
+                    Я создаю дизайн, который чувствуется кончиками пальцев.
+                </h1>
+                
+                <p style="font-size: 1.05rem; line-height: 1.65; color: var(--text-muted); margin-bottom: 1.5rem;">
+                    Привет! Меня зовут Роман. Я основал <strong>Feely Design</strong> на стыке двух миров: точной цифровой математики (алгоритмы Grasshopper, параметрика, 3D-печать) и физического ремесла (минеральное литье, тактильность гипса, натуральная кожа).
+                </p>
+
+                <div style="border-left: 4px solid var(--accent); background: var(--bg-secondary); padding: 1.25rem 1.5rem; margin-bottom: 2rem; font-style: italic; line-height: 1.6;">
+                    «Каждый свой продукт я начинаю с исследования — визуального поиска, необычного алгоритма или решения технологического тупика. Например, я полностью отказался от силикона в пользу прямой 3D-печати модульных матриц со сменными фасадами, сократив R&D с суток до нескольких часов».
+                </div>
+
+                <div class="case-highlights">
+                    <div class="highlight-row">
+                        <span class="highlight-label">Стек программ</span>
+                        <span class="highlight-val">Rhino 3D, Grasshopper, Autodesk Fusion 360, Blender 3D</span>
+                    </div>
+                    <div class="highlight-row">
+                        <span class="highlight-label">Оборудование</span>
+                        <span class="highlight-val">3D-печать (FDM/SLA), сопла 0.8+ мм, вибролитье гипса и бетона</span>
+                    </div>
+                    <div class="highlight-row">
+                        <span class="highlight-label">Материалы</span>
+                        <span class="highlight-val">Архитектурный гипс, терракотовые пигменты, кожа Crazy Horse, полимеры</span>
+                    </div>
+                </div>
+            </div>
+
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; flex-wrap: wrap;">
+                <a href="https://t.me/simonyanrr" target="_blank" rel="noopener" class="btn-primary">
+                    Написать в Telegram (@simonyanrr) ↗
+                </a>
+                <a href="https://instagram.com/feely_design" target="_blank" rel="noopener" class="btn-secondary">
+                    Instagram @feely_design ↗
+                </a>
+            </div>
+        </div>
+    </section>
 
     <footer>
-        <div class="footer-inner">
-            <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
-            <div>ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА И CAD ПО ВСЕМУ МИРУ</div>
-        </div>
+        <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
+        <div><a href="../index.html">← ВЕРНУТЬСЯ НА ГЛАВНУЮ</a></div>
     </footer>
 
     <script src="../assets/js/main.js"></script>
