@@ -16,10 +16,10 @@
     <header>
         <a href="index.html" class="logo-block">
             <span class="logo-indicator"></span>
-            <span>FEELY DESIGN // R&D LAB</span>
+            <span data-i18n="brand_name">FEELY DESIGN // R&D LAB</span>
         </a>
         <nav>
-            <a href="#work" data-i18n="nav_cases">Проекты</a>
+            <a href="#work" data-i18n="nav_work">Проекты</a>
             <a href="#services" data-i18n="nav_services">Направления</a>
             <a href="projects/about.html" data-i18n="nav_about">Обо мне</a>
         </nav>
@@ -32,7 +32,7 @@
         </div>
     </header>
 
-    <!-- HERO SECTION (Голос автора + ваше фото + ключевая идея) -->
+    <!-- HERO SECTION -->
     <section class="grid-row hero">
         <div class="hero-main pad-lg">
             <div>
@@ -61,9 +61,9 @@
                 <div class="author-card-header">
                     <img src="assets/img/roman_simonyan.jpg" alt="Роман Симонян" class="author-avatar-img">
                     <div class="author-title">
-                        <h3>Роман Симонян</h3>
-                        <p>Основатель Feely Design</p>
-                        <p style="color: var(--accent); font-weight: 700; margin-top: 0.2rem;">Хайфа • Worldwide</p>
+                        <h3 data-i18n="author_name">Роман Симонян</h3>
+                        <p data-i18n="author_role">Основатель Feely Design</p>
+                        <p style="color: var(--accent); font-weight: 700; margin-top: 0.2rem;" data-i18n="author_loc">Хайфа • Worldwide</p>
                     </div>
                 </div>
 
@@ -100,7 +100,7 @@
         </div>
     </div>
 
-    <!-- WORK SECTION (Секция с точной привязкой скролла) -->
+    <!-- WORK SECTION -->
     <div id="work" class="section-bar">
         <span data-i18n="sec_cases_l">01 // Избранные проекты</span>
         <span data-i18n="sec_cases_r">Визуальные исследования и продукты</span>
@@ -111,24 +111,24 @@
         <div class="grid-row case-item">
             <div class="case-visual">
                 <div>
-                    <span class="tag tag-dark">CASE_01 // МОДУЛЬНОЕ ЛИТЬЕ</span>
+                    <span class="tag tag-dark">CASE_01 // R&D</span>
                 </div>
                 <a href="projects/parametric-tiles.html" class="case-img-frame" title="Открыть кейс">
                     <div class="case-img-grid-2">
-                        <img src="assets/img/convex_collage.png" alt="Плитка Convex 80x80 в гипсе и терракоте" loading="lazy">
-                        <img src="assets/img/waves_result.jpg" alt="Плитка Waves с глубокой игрой теней" loading="lazy">
+                        <img src="assets/img/convex_collage.png" alt="Плитка Convex 80x80" loading="lazy">
+                        <img src="assets/img/waves_result.jpg" alt="Плитка Waves" loading="lazy">
                     </div>
                 </a>
                 <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>ФОРМАТ: 80×80 мм (Диптихи / Панно)</span>
-                    <span>ЦВЕТА: Натуральный гипс / Терракота</span>
+                    <span data-i18n="case1_format">ФОРМАТ: 80×80 мм (Диптихи / Панно)</span>
+                    <span data-i18n="case1_colors">ЦВЕТА: Натуральный гипс / Терракота</span>
                 </div>
             </div>
 
             <div class="case-info pad-lg">
                 <div>
-                    <span class="tag tag-accent">Флагманский R&D</span>
-                    <span class="tag">Без силикона</span>
+                    <span class="tag tag-accent" data-i18n="case1_badge_featured">Флагманский R&D</span>
+                    <span class="tag" data-i18n="case1_badge_nosilicone">Без силикона</span>
                     <h3 class="case-title" data-i18n="case1_title">Waves & Convex 80×80: Параметрическая плитка без силикона</h3>
                     <p class="case-desc" data-i18n="case1_desc">
                         Вместо классических силиконовых форм я создал унифицированную жесткую опалубку со сменными 3D-печатными фасадами. Это снижает себестоимость R&D в 4 раза и ускоряет путь от экрана до готовой отливки до нескольких часов.
@@ -156,7 +156,7 @@
         <div class="grid-row case-item">
             <div class="case-visual">
                 <div>
-                    <span class="tag tag-dark">CASE_02 // СИНТЕЗ МАТЕРИАЛОВ</span>
+                    <span class="tag tag-dark">CASE_02 // OBJECT</span>
                 </div>
                 <a href="projects/leather-clock.html" class="case-img-frame" title="Открыть кейс">
                     <div class="case-img-grid-2">
@@ -165,15 +165,15 @@
                     </div>
                 </a>
                 <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>МАТЕРИАЛЫ: Кожа Crazy Horse + Сталь + Полимер</span>
+                    <span>Crazy Horse + Steel + Polymer</span>
                     <span>CAD: Rhino 3D</span>
                 </div>
             </div>
 
             <div class="case-info pad-lg">
                 <div>
-                    <span class="tag">Предметный дизайн</span>
-                    <span class="tag">Штампы для кожи</span>
+                    <span class="tag">Object Design</span>
+                    <span class="tag">Embossing Dies</span>
                     <h3 class="case-title" data-i18n="case2_title">Концепт часов на растяжении кожи и штампы тиснения</h3>
                     <p class="case-desc" data-i18n="case2_desc">
                         Исследование натяжения: циферблат из кожи Crazy Horse растянут лепестками на стальном обруче. В дополнение к часам — печатные полимерные штампы для холодного тиснения без дорогих латунных клише.
@@ -201,7 +201,7 @@
         <div class="grid-row case-item">
             <div class="case-visual">
                 <div>
-                    <span class="tag tag-dark">CASE_03 // ЭКСТРУЗИЯ И АРХИВ</span>
+                    <span class="tag tag-dark">CASE_03 // FABRICATION</span>
                 </div>
                 <a href="projects/digital-fabrication.html" class="case-img-frame" title="Открыть кейс">
                     <div class="case-img-grid-2">
@@ -210,8 +210,8 @@
                     </div>
                 </a>
                 <div style="font-size: 0.78rem; color: var(--text-muted); display: flex; justify-content: space-between;">
-                    <span>ПАРАМЕТРЫ: Сопло 0.8 мм // Слой 0.6 мм</span>
-                    <span>АЛГОРИТМ: Grasshopper Attractors</span>
+                    <span>NOZZLE 0.8mm // LAYER 0.6mm</span>
+                    <span>Grasshopper Attractors</span>
                 </div>
             </div>
 
@@ -333,22 +333,22 @@
                 <div class="form-row-2">
                     <div class="form-group">
                         <label for="name" data-i18n="form_name">Ваше имя / Студия *</label>
-                        <input type="text" id="name" name="name" required placeholder="Например: Роман, Студия интерьера">
+                        <input type="text" id="name" name="name" required placeholder="Роман, Студия интерьера">
                     </div>
                     <div class="form-group">
                         <label for="contact-method" data-i18n="form_contact">Контакт (Telegram, WhatsApp или телефон) *</label>
-                        <input type="text" id="contact-method" name="contact" required placeholder="@username или +972...">
+                        <input type="text" id="contact-method" name="contact" required placeholder="@username / +972...">
                     </div>
                 </div>
 
                 <div class="form-group">
                     <label for="task-type" data-i18n="form_cat">Направление запроса</label>
                     <select id="task-type" name="task_type">
-                        <option value="tiles">Параметрическая плитка (Convex / Waves / Панно на стену)</option>
-                        <option value="molds">Печатные матрицы для литья гипса/бетона (без силикона)</option>
-                        <option value="objects">Предметный дизайн (Часы из кожи / Вазы / Стенды)</option>
-                        <option value="tooling">Оснастка, шаблоны и штампы для мастерских</option>
-                        <option value="cad">Параметрический CAD / Grasshopper R&D</option>
+                        <option value="tiles" data-i18n="opt_tiles">Параметрическая плитка (Convex / Waves / Панно на стену)</option>
+                        <option value="molds" data-i18n="opt_molds">Печатные матрицы для литья гипса/бетона (без силикона)</option>
+                        <option value="objects" data-i18n="opt_objects">Предметный дизайн (Часы из кожи / Вазы / Стенды)</option>
+                        <option value="tooling" data-i18n="opt_tooling">Оснастка, шаблоны и штампы для мастерских</option>
+                        <option value="cad" data-i18n="opt_cad">Параметрический CAD / Grasshopper R&D</option>
                     </select>
                 </div>
 
@@ -370,7 +370,7 @@
                             <span>📷</span> <span>Instagram</span>
                         </button>
                         <button type="button" class="btn-dispatch email" data-dispatch="email">
-                            <span>✉</span> <span>На Почту</span>
+                            <span>✉</span> <span>Email</span>
                         </button>
                     </div>
                 </div>
@@ -382,8 +382,8 @@
 
     <!-- FOOTER -->
     <footer>
-        <div>© 2026 FEELY DESIGN // РОМАН СИМОНЯН</div>
-        <div>ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ</div>
+        <div>© 2026 FEELY DESIGN // <span data-i18n="author_name">РОМАН СИМОНЯН</span></div>
+        <div data-i18n="footer_loc">ХАЙФА, ИЗРАИЛЬ • ДОСТАВКА ПО ВСЕМУ МИРУ</div>
     </footer>
 
     <script src="assets/js/main.js"></script>

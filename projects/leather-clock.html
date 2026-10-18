@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CASE 02: ЧАСЫ ИЗ КОЖИ И ШТАМПЫ ТИСНЕНИЯ // FEELY DESIGN</title>
+    <title>CASE 02: TENSION LEATHER CLOCK // FEELY DESIGN</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,400;0,700;1,400&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
@@ -14,64 +14,65 @@
     <header>
         <a href="../index.html" class="logo-block">
             <span class="logo-indicator"></span>
-            <span>FEELY DESIGN // R&D LAB</span>
+            <span data-i18n="brand_name">FEELY DESIGN // R&D LAB</span>
         </a>
         <nav>
-            <a href="parametric-tiles.html">← Пред: Плитка</a>
-            <a href="../index.html#work">Все проекты</a>
-            <a href="digital-fabrication.html">След: Экструзия →</a>
+            <a href="../index.html#work" data-i18n="nav_all_cases">← Все проекты</a>
+            <a href="about.html" data-i18n="nav_about">Об авторе</a>
         </nav>
         <div class="header-controls">
-            <a href="../index.html#contact" class="cta-header">Заказать изделие / штамп →</a>
+            <div class="lang-switch" aria-label="Language switcher">
+                <button type="button" class="lang-btn active" data-lang="ru">RU</button>
+                <button type="button" class="lang-btn" data-lang="en">EN</button>
+            </div>
+            <a href="../index.html#contact" class="cta-header" data-i18n="nav_order_clock">Заказать изделие / штамп →</a>
         </div>
     </header>
 
     <section class="page-hero">
         <div class="breadcrumb">
-            <a href="../index.html">ГЛАВНАЯ</a> <span>/</span> <span>КЕЙС_02</span> <span>/</span> <span>ПРЕДМЕТНЫЙ ДИЗАЙН & КОЖА</span>
+            <a href="../index.html" data-i18n="breadcrumb_home">ГЛАВНАЯ</a> <span>/</span> <span>CASE_02</span> <span>/</span> <span>COMPOSITE OBJECTS</span>
         </div>
-        <span class="tag tag-accent">Синтез материалов</span>
-        <span class="tag">Кожа Crazy Horse</span>
-        <span class="tag">Полимерные штампы</span>
-        <h1 class="hero-title" style="max-width: 28ch;">Натяжные интерьерные часы из кожи и оснастка для тиснения</h1>
-        <p class="hero-sub">
+        <span class="tag tag-accent">Crazy Horse Leather</span>
+        <span class="tag">Rhino 3D</span>
+        <span class="tag">Polymer Dies</span>
+        <h1 class="hero-title" style="max-width: 28ch;" data-i18n="c2_hero_title">Натяжные интерьерные часы из кожи и оснастка для тиснения</h1>
+        <p class="hero-sub" data-i18n="c2_hero_sub">
             Соединение ремесленной мягкости кожи и точности цифрового производства: радиальный циферблат, натянутый лепестками на стальном обруче, и твердотельные полимерные штампы для холодного тиснения без латунных клише.
         </p>
     </section>
 
     <div class="section-bar">
-        <span>01 // Визуальные материалы и рендеры</span>
+        <span>01 // Visual Renders</span>
         <span>Rhino 3D + Surface Deformation</span>
     </div>
 
     <section class="gallery-grid">
         <div class="gallery-cell">
-            <img src="../assets/img/leather_clock_front.png" alt="Натяжные часы из кожи — фронтальный вид">
+            <img src="../assets/img/leather_clock_front.png" alt="Tension Leather Clock Front">
             <div class="gallery-caption">
-                <span>РИС 2.1 // РАДИАЛЬНАЯ КОЖАНАЯ МЕМБРАНА НА СТАЛЬНОМ КОНТУРЕ</span>
-                <span>ФРОНТАЛЬНЫЙ ВИД</span>
+                <span data-i18n="c2_fig1">РИС 2.1 // РАДИАЛЬНАЯ КОЖАНАЯ МЕМБРАНА НА СТАЛЬНОМ КОНТУРЕ</span>
             </div>
         </div>
         <div class="gallery-cell">
-            <img src="../assets/img/leather_clock_back.png" alt="Задняя часть часов с печатным корпусом механизма">
+            <img src="../assets/img/leather_clock_back.png" alt="Tension Leather Clock Back">
             <div class="gallery-caption">
-                <span>РИС 2.2 // 3D-ПЕЧАТНЫЙ КОРПУС МЕХАНИЗМА И ФИКСАТОР ЛЕПЕСТКОВ</span>
-                <span>ТЫЛЬНАЯ ЧАСТЬ</span>
+                <span data-i18n="c2_fig2">РИС 2.2 // 3D-ПЕЧАТНЫЙ КОРПУС МЕХАНИЗМА И ФИКСАТОР ЛЕПЕСТКОВ</span>
             </div>
         </div>
     </section>
 
     <div class="section-bar">
-        <span>02 // Конструкция и оснастка</span>
-        <span>Решения для мастерских</span>
+        <span>02 // Architecture</span>
+        <span data-i18n="sec_services_r">Конструкция и оснастка</span>
     </div>
 
     <section class="grid-row services-grid">
         <div class="service-card pad-lg">
             <div>
-                <span class="service-num">[01 // НАПРЯЖЕНИЕ МАТЕРИАЛА]</span>
-                <h2 class="service-title">Эффект барабана</h2>
-                <p class="service-desc">
+                <span class="service-num">[01 // TENSION]</span>
+                <h2 class="service-title" data-i18n="c2_card1_t">Эффект барабана</h2>
+                <p class="service-desc" data-i18n="c2_card1_d">
                     Вместо наклеивания кожи на плоскую фанеру циферблат удерживается натяжением 8 радиальных лепестков вокруг стального кольца. Задняя печатная шайба фиксирует натяжение и прячет кварцевый механизм.
                 </p>
             </div>
@@ -79,9 +80,9 @@
 
         <div class="service-card pad-lg">
             <div>
-                <span class="service-num">[02 // ЭКОНОМИЯ НА КЛИШЕ]</span>
-                <h2 class="service-title">Полимерные штампы</h2>
-                <p class="service-desc">
+                <span class="service-num">[02 // DIES]</span>
+                <h2 class="service-title" data-i18n="c2_card2_t">Полимерные штампы</h2>
+                <p class="service-desc" data-i18n="c2_card2_d">
                     Фрезеровка латунных клише стоит дорого и не подходит для быстрого тестирования тактильной глубины. Мы печатаем высокоплотные полимерные матрицы с рассчитанными фасками, выдерживающими усилие пресса при холодном тиснении.
                 </p>
             </div>
@@ -89,21 +90,21 @@
 
         <div class="service-card pad-lg">
             <div>
-                <span class="service-num">[03 // СОТРУДНИЧЕСТВО]</span>
-                <h2 class="service-title">Заказ объекта или штампа</h2>
-                <p class="service-desc">
+                <span class="service-num">[03 // INQUIRY]</span>
+                <h2 class="service-title" data-i18n="c2_card3_t">Заказ объекта или штампа</h2>
+                <p class="service-desc" data-i18n="c2_card3_d">
                     Вы можете заказать как авторские интерьерные часы, так и разработку клише, выкроек и шаблонов для вашей кожевенной студии.
                 </p>
             </div>
-            <a href="../index.html#contact" class="btn-primary" style="margin-top: 1.5rem; justify-content: center;">
+            <a href="../index.html#contact" class="btn-primary" style="margin-top: 1.5rem; justify-content: center;" data-i18n="nav_order_clock">
                 Обсудить проект →
             </a>
         </div>
     </section>
 
     <footer>
-        <div>© 2026 FEELY DESIGN // КЕЙС 02: ЧАСЫ ИЗ КОЖИ</div>
-        <div><a href="../index.html">← ВЕРНУТЬСЯ НА ГЛАВНУЮ</a></div>
+        <div>© 2026 FEELY DESIGN // <span data-i18n="author_name">РОМАН СИМОНЯН</span></div>
+        <div><a href="../index.html" data-i18n="nav_all_cases">← ВЕРНУТЬСЯ НА ГЛАВНУЮ</a></div>
     </footer>
 
     <script src="../assets/js/main.js"></script>
